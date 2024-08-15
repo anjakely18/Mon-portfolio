@@ -1,18 +1,35 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { links } from "../assets/data";
 
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <header className="header">
       <h2 className="logo">
         Anja <span>Rasamoelina</span>
       </h2>
+
       <div className="bx bx-menu" id="menu-icon">
-        <GiHamburgerMenu />
+        <GiHamburgerMenu onClick={toggle} />
       </div>
+
       <nav className="navbar">
+        {links.map((link) => {
+          const { id, href, text } = link;
+          return (
+            <a key={id} href={href} className="navlink">
+              {text}
+            </a>
+          );
+        })}
+      </nav>
+
+      <nav className="navbar" style={{ display: isOpen ? "flex" : "none" }}>
         {links.map((link) => {
           const { id, href, text } = link;
           return (
