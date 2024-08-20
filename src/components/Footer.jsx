@@ -6,10 +6,13 @@ const Footer = () => {
   return (
     <section className="footer">
       <div className="social-icons">
-        <a href="https://www.linkedin.com/in/anja-rasamoelina-59a8352a8/">
+        <a
+          href="https://www.linkedin.com/in/anja-rasamoelina-59a8352a8/"
+          target="_blank"
+        >
           <FaLinkedinIn className="icon-link" />
         </a>
-        <a href="https://github.com/anjakely18">
+        <a href="https://github.com/anjakely18" target="_blank">
           <FaGithub className="icon-link" />
         </a>
       </div>
