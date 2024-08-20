@@ -14,7 +14,7 @@ const Home = () => {
         </h3>
         <p>Transformer les idées en réalité interactive</p>
         <div className="social-icons">
-          <a href="www.linkedin.com/in/anja-rasamoelina-59a8352a8">
+          <a href="https://www.linkedin.com/in/anja-rasamoelina-59a8352a8/">
             <FaLinkedinIn className="icon-link" />
           </a>
           <a href="https://github.com/anjakely18">
