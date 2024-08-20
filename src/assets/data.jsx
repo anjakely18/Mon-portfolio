@@ -1,5 +1,8 @@
 import { nanoid } from "nanoid";
 import { FaHtml5, FaJs, FaReact, FaPhp } from "react-icons/fa";
+import cocktail from "./cocktail-verse.png";
+import toDo from "./to-do-list.png";
+import simon from "./simon-game.png";
 
 export const links = [
   { id: nanoid(), href: "#home", text: "Accueil" },
@@ -32,5 +35,32 @@ export const skills = [
     title: "PHP",
     icon: <FaPhp className="skill-icon" />,
     text: "Connaissance de base en PHP pour gérer la logique côté serveur et l'interaction avec les bases de données.",
+  },
+];
+
+export const projects = [
+  {
+    id: nanoid(),
+    img: cocktail,
+    url: "https://verdant-syrniki-e21f07.netlify.app/",
+    github: "https://github.com/anjakely18/CocktailVerse",
+    title: "Cocktail Verse",
+    text: "Application web développée avec React qui permet de rechercher différentes variantes de cocktails.L'application utilise React Router pour une navigation fluide entre les résultats de recherche et les détails des recettes, récupérés via l'API TheCocktailDB. Les requêtes API sont effectuées avec Axios pour un traitement asynchrone et efficace des données.",
+  },
+  {
+    id: nanoid(),
+    img: toDo,
+    url: "https://bucolic-pika-937976.netlify.app/",
+    github: "https://github.com/anjakely18/to-do-list",
+    title: "To-do list",
+    text: "Application de to-do développée avec React. Cette application permet aux utilisateurs d'ajouter et de supprimer des taches, utilisant `useState` pour gérer l'état et `localStorage` pour persister les données.",
+  },
+  {
+    id: nanoid(),
+    img: simon,
+    url: "https://simon-game-anja.netlify.app/",
+    github: "https://github.com/anjakely18/javascript-the-simon-game",
+    title: "simon game",
+    text: "Jeu Simon, développé en JavaScript. Le jeu teste la mémoire des joueurs en leur demandant de reproduire des séquences de couleurs croissantes, avec des animations et des mécanismes de validation.",
   },
 ];

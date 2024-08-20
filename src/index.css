@@ -16,6 +16,7 @@
   --main-color: #ae90e9;
   --font-title: "Merriweather", serif;
   --box-shadow1: 0 0 25px #8c52ff;
+  --box-shadow2: 0 0 50px #8c52ff;
 }
 html {
   font-size: 60%;
@@ -117,6 +118,28 @@ header {
   cursor: pointer;
 }
 
+.icon-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease-in-out;
+}
+
+.icon-link:hover {
+  color: var(--text-color);
+  transform: scale(1.3) translateY(-5px);
+  box-shadow: 0 0 25px var(--main-color);
+  background-color: var(--main-color);
+}
+
 /*------------HOME-------------*/
 .home {
   display: flex;
@@ -162,28 +185,6 @@ span {
 .home-img img:hover {
   box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
     0 0 100px var(--main-color);
-}
-
-.icon-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 4.5rem;
-  height: 4.5rem;
-  background: transparent;
-  border: 2px solid var(--main-color);
-  font-size: 2.5rem;
-  border-radius: 50%;
-  color: var(--main-color);
-  margin: 3rem 1.5rem 3rem 0;
-  transition: 0.3s ease-in-out;
-}
-
-.icon-link:hover {
-  color: var(--text-color);
-  transform: scale(1.3) translateY(-5px);
-  box-shadow: 0 0 25px var(--main-color);
-  background-color: var(--main-color);
 }
 
 .btn-group {
@@ -282,6 +283,57 @@ span {
   font-size: 2.5rem;
 }
 
+/*------------PROJECTS-------------*/
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.card {
+  min-height: 550px;
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 3px solid rgba(238, 238, 238, 0.2);
+  border-radius: 2rem;
+  margin: 0 2rem;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover {
+  border: 3px solid var(--main-color);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: var(--box-shadow2);
+}
+
+.card img {
+  width: 30rem;
+  height: 30rem;
+  border: 3px solid var(--main-color);
+  box-shadow: var(--box-shadow1);
+}
+
+.card h2 {
+  font-size: 2.8rem;
+  text-transform: capitalize;
+  font-family: var(--font-title);
+}
+
 /*------------CONTACT-------------*/
 .contact form {
   display: flex;
@@ -345,13 +397,19 @@ span {
   text-align: center;
 }
 
-@media (max-width: 1400px) {
+/*------------RESPONSIVE-------------*/
+
+@media (max-width: 1600px) {
   html {
     font-size: 55%;
   }
 
   .about-content {
     flex-direction: column;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -364,6 +422,10 @@ span {
   }
 
   .skills {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -399,6 +461,11 @@ span {
     border-bottom: 2px solid var(--main-color);
     display: none;
     flex-direction: column;
+  }
+
+  header .navbar.active {
+    display: flex;
+    transform: translateX(0); /* Faire apparaître la navbar */
   }
 
   header .navbar a {

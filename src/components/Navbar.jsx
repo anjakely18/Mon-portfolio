@@ -8,6 +8,8 @@ const Navbar = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  console.log(isOpen);
+
   return (
     <header className="header">
       <h2 className="logo">
@@ -18,18 +20,7 @@ const Navbar = () => {
         <GiHamburgerMenu onClick={toggle} />
       </div>
 
-      <nav className="navbar">
-        {links.map((link) => {
-          const { id, href, text } = link;
-          return (
-            <a key={id} href={href} className="navlink">
-              {text}
-            </a>
-          );
-        })}
-      </nav>
-
-      <nav className="navbar" style={{ display: isOpen ? "flex" : "none" }}>
+      <nav className={`navbar ${isOpen ? "active" : ""}`}>
         {links.map((link) => {
           const { id, href, text } = link;
           return (

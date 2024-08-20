@@ -14,10 +14,10 @@ const Home = () => {
         </h3>
         <p>Transformer les idées en réalité interactive</p>
         <div className="social-icons">
-          <a href="#">
+          <a href="www.linkedin.com/in/anja-rasamoelina-59a8352a8">
             <FaLinkedinIn className="icon-link" />
           </a>
-          <a href="#">
+          <a href="https://github.com/anjakely18">
             <FaGithub className="icon-link" />
           </a>
         </div>
@@ -26,7 +26,7 @@ const Home = () => {
           <a href="#" className="btn">
             Télécharger mon CV
           </a>
-          <a href="contact" className="btn">
+          <a href="#contact" className="btn">
             Me contacter
           </a>
         </div>
