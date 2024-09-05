@@ -3,6 +3,7 @@ import { FaHtml5, FaJs, FaReact, FaPhp } from "react-icons/fa";
 import cocktail from "./cocktail-verse.png";
 import toDo from "./to-do-list.png";
 import simon from "./simon-game.png";
+import blog from "./blog.png";
 
 export const links = [
   { id: nanoid(), href: "#home", text: "Accueil" },
@@ -62,5 +63,13 @@ export const projects = [
     github: "https://github.com/anjakely18/javascript-the-simon-game",
     title: "simon game",
     text: "Jeu Simon, développé en JavaScript. Le jeu teste la mémoire des joueurs en leur demandant de reproduire des séquences de couleurs croissantes, avec des animations et des mécanismes de validation.",
+  },
+  {
+    id: nanoid(),
+    img: blog,
+    url: "http://visionnaire-life.atwebpages.com/",
+    github: "https://github.com/anjakely18/Blog-Personnel",
+    title: "Blog dynamique en php",
+    text: "Ce projet est un blog développé en PHP avec AJAX pour des interactions fluides sans rechargement. Il utilise une base de données pour gérer les articles, commentaires, catégories, et une barre de recherche. Le tout est construit en pur HTML et CSS pour un design simple et responsive.",
   },
 ];
