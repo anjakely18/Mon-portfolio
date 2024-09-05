@@ -35,7 +35,7 @@ export const skills = [
     id: nanoid(),
     title: "PHP",
     icon: <FaPhp className="skill-icon" />,
-    text: "Connaissance de base en PHP pour gérer la logique côté serveur et l'interaction avec les bases de données.",
+    text: "Connaissance en PHP pour gérer la logique côté serveur et l'interaction avec les bases de données.",
   },
 ];
 
