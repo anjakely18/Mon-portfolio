@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaFigma } from "react-icons/fa";
+import { FaCode, FaJs, FaReact, FaFigma } from "react-icons/fa";
 import { MdCampaign } from "react-icons/md";
 import {
   SiAdobeillustrator,
@@ -11,7 +11,10 @@ import {
 } from "react-icons/si";
 import cuej from "./cuej.png";
 import sobriete from "./sae.png";
+import blog from "./blog.png";
+import sig from "./sig.png";
 
+// Liens de navigation
 export const links = [
   { id: nanoid(), href: "#home", text: "Accueil" },
   { id: nanoid(), href: "#about", text: "À propos" },
@@ -19,51 +22,35 @@ export const links = [
   { id: nanoid(), href: "#contact", text: "Contact" },
 ];
 
+// Compétences regroupées par catégories
 export const skills = [
   {
     id: nanoid(),
-    title: "HTML & CSS",
-    icon: <FaHtml5 className="skill-icon" />,
-    text: "Maîtrise des bases du développement web avec HTML et CSS. Expérience avec Bootstrap, SCSS et Tailwind pour styliser efficacement les interfaces.",
+    title: "Développement Web",
+    icon: <FaCode className="skill-icon" />,
+    text: "Maîtrise du développement front-end et back-end : HTML, CSS (Bootstrap, SCSS, Tailwind), JavaScript, React, PHP, Twig et MySQL. Expérience dans la création de sites dynamiques et interactifs, incluant des fonctionnalités CMS personnalisées.",
   },
   {
     id: nanoid(),
-    title: "Javascript",
-    icon: <FaJs className="skill-icon" />,
-    text: "Capacité à ajouter de l'interactivité aux sites web et à développer des fonctionnalités dynamiques.",
-  },
-  {
-    id: nanoid(),
-    title: "React",
-    icon: <FaReact className="skill-icon" />,
-    text: "Expérience dans le développement d'applications web réactives et modulaires avec ce framework puissant.",
-  },
-  {
-    id: nanoid(),
-    title: "PHP & Back-end",
-    icon: <SiPhp className="skill-icon" />,
-    text: "Expérience en développement back-end avec PHP, incluant la gestion de bases de données avec MySQL et l'utilisation de Twig pour la templatisation.",
-  },
-  {
-    id: nanoid(),
-    title: "Stratégie de communication & Gestion de projet",
-    icon: <MdCampaign className="skill-icon" />,
-    text: "Compétences en communication digitale, gestion de projet en méthodologie Agile, et optimisation SEO pour améliorer la visibilité en ligne.",
-  },
-  {
-    id: nanoid(),
-    title: "Création numérique",
-    icon: <SiAdobeillustrator className="skill-icon" />,
-    text: "Maîtrise de la suite Adobe (Photoshop, Illustrator, InDesign) pour la conception graphique et la production de contenus numériques impactants.",
-  },
-  {
-    id: nanoid(),
-    title: "UI/UX Design",
+    title: "UI/UX Design & Création Numérique",
     icon: <FaFigma className="skill-icon" />,
-    text: "Utilisation avancée de Figma pour concevoir des interfaces intuitives, wireframes et prototypes interactifs.",
+    text: "Conception d'interfaces utilisateur intuitives avec Figma et développement de wireframes et prototypes interactifs. Expérience en création graphique avec la suite Adobe (Illustrator, Photoshop, InDesign).",
+  },
+  {
+    id: nanoid(),
+    title: "Stratégie de Communication & Gestion de Projet",
+    icon: <MdCampaign className="skill-icon" />,
+    text: "Compétences en communication digitale, optimisation SEO et gestion de projet en méthodologie Agile pour assurer la cohérence et la performance des projets numériques.",
+  },
+  {
+    id: nanoid(),
+    title: "Interactivité & Animation",
+    icon: <FaJs className="skill-icon" />,
+    text: "Développement d'interactions dynamiques avec JavaScript et React. Expérience en motion design pour enrichir les contenus visuels et améliorer l’expérience utilisateur.",
   },
 ];
 
+// Projets réalisés
 export const projects = [
   {
     id: nanoid(),
@@ -71,7 +58,7 @@ export const projects = [
     url: "https://www.cuej.info/mini-sites/ruraux2024/index.php?",
     github: "https://github.com/anjakely18/SITE-CUEJ",
     title: "Site web pour le CUEJ - Ruraux 2024",
-    text: "Projet réalisé pour le CUEJ, permettant aux étudiants en journalisme de publier des reportages sur la vie rurale en 2024. Développé en PHP et Twig, avec une base de données MySQL pour gérer les articles et médias. J’ai principalement contribué au développement back-end et front-end, assurant une structure dynamique et une navigation fluide.",
+    text: "Projet développé pour le CUEJ, permettant aux étudiants en journalisme de publier des reportages sur la vie rurale. Développé en PHP et Twig, avec une base de données MySQL pour gérer les articles et médias. J’ai principalement travaillé sur le développement back-end et front-end, assurant une structure dynamique et une navigation fluide.",
   },
   {
     id: nanoid(),
@@ -79,6 +66,21 @@ export const projects = [
     url: "https://rasamoelina.etu.mmi-unistra.fr/SAE303-site/",
     github: "https://github.com/anjakely18/site-sobri-t-",
     title: "Site de sensibilisation à la sobriété numérique",
-    text: "Projet visant à informer sur la sobriété numérique et ses enjeux environnementaux. J’ai conçu l’intégralité du design du site avec Figma et réalisé les illustrations. L’équipe a intégré des infographies dynamiques avec Chart.js, et j’ai veillé à une mise en page optimisée dans une démarche d’éco-conception web.",
+    text: "Projet visant à sensibiliser aux enjeux environnementaux du numérique. J’ai conçu le design du site avec Figma et réalisé les illustrations. L’équipe a intégré des infographies dynamiques avec Chart.js, et j’ai optimisé la mise en page dans une démarche d’éco-conception web.",
+  },
+  {
+    id: nanoid(),
+    img: blog,
+    url: "https://rasamoelina.etu.mmi-unistra.fr/blog/index.php?page=accueil",
+
+    title: "Blog en PHP & Twig - CMS personnalisé",
+    text: "Développement d’un blog dynamique utilisant PHP et Twig, avec un système CRUD pour gérer les articles et blocs. J’ai mis en place une interface d’administration intuitive, ce qui en fait une solution flexible et évolutive pour la gestion de contenu.",
+  },
+  {
+    id: nanoid(),
+    img: sig,
+    url: "https://www.figma.com/proto/SxxOLlE0NvRR76uzWn0v8i/SAE302?node-id=676-1944&t=jGbcf6r4Jk1k0s44-1&scaling=scale-down&content-scaling=fixed&page-id=18%3A5&starting-point-node-id=676%3A1944",
+    title: "Identité visuelle et Goodies pour la SIG",
+    text: "Projet réalisé pour la SIG Association dans le cadre de la SAE. J’ai conçu un prototype Figma complet proposant une refonte du logo, des éléments graphiques ainsi qu’une gamme de goodies (t-shirts, affiches, stickers, etc.). Ce travail visait à moderniser l’identité visuelle du club et à renforcer son impact auprès des supporters et partenaires.",
   },
 ];
