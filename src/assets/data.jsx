@@ -79,7 +79,7 @@ export const projects = [
   {
     id: nanoid(),
     img: sig,
-    url: "https://www.figma.com/proto/SxxOLlE0NvRR76uzWn0v8i/SAE302?node-id=676-1944&t=jGbcf6r4Jk1k0s44-1&scaling=scale-down&content-scaling=fixed&page-id=18%3A5&starting-point-node-id=676%3A1944",
+    url: "https://www.behance.net/gallery/219287985/Sig-Association-Maquette",
     title: "Identité visuelle et Goodies pour la SIG",
     text: "Projet réalisé pour la SIG Association dans le cadre de la SAE. J’ai conçu un prototype Figma complet proposant une refonte du logo, des éléments graphiques ainsi qu’une gamme de goodies (t-shirts, affiches, stickers, etc.). Ce travail visait à moderniser l’identité visuelle du club et à renforcer son impact auprès des supporters et partenaires.",
   },
