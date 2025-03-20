@@ -8,16 +8,15 @@ const About = () => {
       <SectionTitle title="Tout sur moi" />
       <div className="about-content">
         <p>
-          Je m'appelle Anja, étudiante en deuxième année de BUT Métiers du
-          Multimédia et de l'Internet (MMI), avec une spécialisation en
-          développement web. Mon parcours inclut également une expérience en
-          communication et en création numérique, que j'intègre dans mes projets
-          pour allier technique et créativité.<br></br> Passionnée par le
-          développement front et back, j'aime concevoir des interfaces
-          interactives et esthétiques en utilisant React, JavaScript, HTML, et
-          CSS. J'ai aussi des bases solides en PHP et en gestion de CMS. En
-          parallèle, je m'intéresse à l'UI/UX Design, au motion design avec
-          After Effects, et à la stratégie de communication digitale. <br></br>
+          Étudiante en deuxième année de BUT Métiers du Multimédia et de
+          l'Internet (MMI), je me spécialise en développement web tout en
+          intégrant mes compétences en communication et création numérique.
+          J’aime combiner technique et créativité pour donner vie à des projets
+          dynamiques et immersifs.<br></br> Je conçois
+          des interfaces interactives et esthétiques en React, JavaScript, HTML
+          et CSS, avec une solide base en PHP (Symfony) et gestion de CMS. Mais
+          ce n’est pas tout : l'UI/UX design et la stratégie de communication
+          digitale font aussi partie de mon univers ! <br></br>
           J’ai travaillé sur divers projets, notamment la refonte de sites web,
           des infographies dynamiques et des plateformes interactives. Je suis
           toujours en quête de nouvelles opportunités et collaborations pour

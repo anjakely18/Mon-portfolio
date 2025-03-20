@@ -29,7 +29,7 @@ export const skills = [
     id: nanoid(),
     title: "Développement Web",
     icon: <FaCode className="skill-icon" />,
-    text: "Maîtrise du développement front-end et back-end : HTML, CSS (Bootstrap, SCSS, Tailwind), JavaScript, React, PHP, Twig et MySQL. Expérience dans la création de sites dynamiques et interactifs, incluant des fonctionnalités CMS personnalisées avec WordPress.",
+    text: "Maîtrise du développement front-end et back-end : HTML, CSS (Bootstrap, SCSS, Tailwind), JavaScript, React, PHP, Symfony, Twig et MySQL. Expérience dans la création de sites dynamiques et interactifs, incluant des fonctionnalités CMS personnalisées avec WordPress.",
   },
   {
     id: nanoid(),
