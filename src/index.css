@@ -317,6 +317,7 @@ span {
 
 .card img {
   object-fit: cover;
+  width: 100%;
 }
 
 .card:hover {
