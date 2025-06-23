@@ -13,6 +13,7 @@ import cuej from "./cuej.png";
 import sobriete from "./sae.png";
 import sig from "./sig.png";
 import couture from "./filAndCie.png";
+import touschercheurs from "./touschercheurs.png";
 import unity from "./unity.png";
 
 
@@ -70,6 +71,14 @@ export const projects = [
     text: "Projet développé pour le CUEJ, permettant aux étudiants en journalisme de publier des reportages sur la vie rurale. Développé en PHP, Javascript, CSS et HTML avec une base de données MySQL pour gérer les articles et médias. J’ai principalement travaillé sur le développement back-end et front-end, assurant une structure dynamique et une navigation fluide.",
   },
   {
+  id: nanoid(),
+  img: touschercheurs, 
+  url: "http://sc4maju4065.universe.wf/",
+  title: "Refonte du site Tous Chercheurs Alsace",
+  text: "Stage de deux mois au CNRS Délégation Alsace, durant lequel j’ai contribué à la refonte du site Tous Chercheurs via WordPress et Elementor. J’ai restructuré la navigation, optimisé la lisibilité du contenu, intégré un calendrier d’événements dynamiques et mis en place un bouton d’appel à l’action clair pour favoriser la participation. L’hébergeur n’ayant pas encore modifié le nom de domaine final (prévu : touschercheursalsace.fr), le site est actuellement accessible via un lien temporaire.",
+},
+  
+  {
     id: nanoid(),
     img: sobriete,
     url: "https://rasamoelina.etu.mmi-unistra.fr/SAE303-site/",
@@ -99,7 +108,9 @@ export const projects = [
   github: "https://github.com/NoahBoos/mmi-sae402",
   title: "Développement d’un jeu RPG sur Unity",
   text: "Projet de développement d’un jeu RPG en 3D sur Unity, réalisé en équipe. J’ai conçu une scène complète située dans une forêt médiévale, modélisé les personnages (joueur et ennemis) avec Blender, et intégré des mécaniques d’interaction : détection et poursuite par les ennemis, gestion des collisions, et transitions entre scènes. J’ai également conçu le menu de démarrage du jeu. Ce projet m’a permis de renforcer mes compétences en développement interactif, en modélisation 3D et en logique de gameplay.",
-},
+}
+
+
 
 
 ];
