@@ -13,6 +13,8 @@ import cuej from "./cuej.png";
 import sobriete from "./sae.png";
 import sig from "./sig.png";
 import couture from "./filAndCie.png";
+import unity from "./unity.png";
+
 
 // Liens de navigation
 export const links = [
@@ -90,4 +92,14 @@ export const projects = [
     title: "Identité visuelle et Goodies pour la SIG",
     text: "Projet réalisé pour la SIG Association dans le cadre de la SAE. J’ai conçu un prototype Figma complet proposant une refonte du logo, des éléments graphiques ainsi qu’une gamme de goodies (t-shirts, affiches, stickers, etc.). Ce travail visait à moderniser l’identité visuelle du club et à renforcer son impact auprès des supporters et partenaires.",
   },
+  {
+  id: nanoid(),
+  img: unity,
+  url: "https://drive.google.com/file/d/1AKEYh0BxoL6N8u_6LBE_Ulv4gR777-CE/view",
+  github: "https://github.com/NoahBoos/mmi-sae402",
+  title: "Développement d’un jeu RPG sur Unity",
+  text: "Projet de développement d’un jeu RPG en 3D sur Unity, réalisé en équipe. J’ai conçu une scène complète située dans une forêt médiévale, modélisé les personnages (joueur et ennemis) avec Blender, et intégré des mécaniques d’interaction : détection et poursuite par les ennemis, gestion des collisions, et transitions entre scènes. J’ai également conçu le menu de démarrage du jeu. Ce projet m’a permis de renforcer mes compétences en développement interactif, en modélisation 3D et en logique de gameplay.",
+},
+
+
 ];
