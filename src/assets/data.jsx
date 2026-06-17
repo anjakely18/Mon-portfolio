@@ -21,6 +21,7 @@ import unity from "./unity.png";
 export const links = [
   { id: nanoid(), href: "/home", text: "Accueil" },
   { id: nanoid(), href: "/about", text: "À propos" },
+  { id: nanoid(), href: "/skills", text: "Compétences" },
   { id: nanoid(), href: "/projects", text: "Projets" },
   { id: nanoid(), href: "/contact", text: "Contact" },
 ];
