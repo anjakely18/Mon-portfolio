@@ -19,10 +19,10 @@ import unity from "./unity.png";
 
 // Liens de navigation
 export const links = [
-  { id: nanoid(), href: "#home", text: "Accueil" },
-  { id: nanoid(), href: "#about", text: "À propos" },
-  { id: nanoid(), href: "#projects", text: "Projets" },
-  { id: nanoid(), href: "#contact", text: "Contact" },
+  { id: nanoid(), href: "/home", text: "Accueil" },
+  { id: nanoid(), href: "/about", text: "À propos" },
+  { id: nanoid(), href: "/projects", text: "Projets" },
+  { id: nanoid(), href: "/contact", text: "Contact" },
 ];
 
 // Compétences regroupées par catégories

@@ -2,13 +2,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { links } from "../assets/data";
 
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
-  console.log(isOpen);
 
   return (
     <header className="header">
@@ -24,9 +24,9 @@ const Navbar = () => {
         {links.map((link) => {
           const { id, href, text } = link;
           return (
-            <a key={id} href={href} className="navlink">
+            <Link onClick={() => setIsOpen(false)} to={href} key={id} className="navlink">
               {text}
-            </a>
+            </Link>
           );
         })}
       </nav>

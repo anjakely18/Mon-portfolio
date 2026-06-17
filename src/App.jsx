@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -9,10 +10,12 @@ const App = () => {
   return (
     <main>
       <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </main>
   );
