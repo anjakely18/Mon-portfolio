@@ -5,15 +5,17 @@ import cv from "../../../assets/cv.pdf";
 
 const Hero = () => {
   return (
-    <section className="home" id="home">
-      <div className="home-content">
-        <h1>
+    <section className="flex items-center justify-center gap-12">
+      <div className="flex flex-col items-start justify-center mt-12">
+        <h1 className="text-h1 font-title text-">
           Bienvenue, je m'appelle <span>Anja</span>
         </h1>
-        <h3>
+        <h3 className="mb-8 mt-8 text-h3 font-title">
           <span>Développeuse web </span> junior
         </h3>
-        <p>Transformer les idées en réalité interactive</p>
+        <p className="text-body">
+          Transformer les idées en réalité interactive
+        </p>
         <div className="social-icons">
           <a
             href="https://www.linkedin.com/in/anja-rasamoelina-59a8352a8/"
@@ -35,7 +37,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="home-img">
+      <div className="relative top-12 w-[30vw] rounded-full cursor-pointer transition-all duration-[400ms] ease-in-out shadow-[0_0_25px_var(--color-main)]">
         <img src={maPhoto} alt="ma photo" />
       </div>
     </section>
