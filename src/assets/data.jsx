@@ -19,14 +19,23 @@ import unity from "./unity.png";
 
 // Liens de navigation
 export const links = [
-  { id: nanoid(), href: "/home", text: "Accueil" },
+  { id: nanoid(), href: "/", text: "Accueil" },
   { id: nanoid(), href: "/about", text: "À propos" },
   { id: nanoid(), href: "/skills", text: "Compétences" },
   { id: nanoid(), href: "/projects", text: "Projets" },
   { id: nanoid(), href: "/contact", text: "Contact" },
 ];
 
-// Compétences regroupées par catégories
+// Infos clés - section About de la Home
+export const aboutInfo = {
+  bio: "Étudiante en BUT MMI, je me spécialise en développement web en combinant technique et créativité.",
+  localisation: "Strasbourg, France",
+  cards: [
+    { id: nanoid(), title: "Formation", description: "BUT MMI, 2ème année" },
+    { id: nanoid(), title: "Disponibilité", description: "Open to work" },
+  ],
+};
+
 // Compétences regroupées par catégories
 export const skills = [
   {
