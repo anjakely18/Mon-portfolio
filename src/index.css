@@ -3,23 +3,62 @@
 @theme {
   /* Couleurs */
   --color-main: #ae90e9;
-  --color-bg: #1e1e2c;
-  --color-bg-second: #212135;
+  --color-bg: #212135;
+  --color-bg-second: #13131f;
 
   /* Typographie */
   --font-title: "Merriweather", serif;
   --font-body: "Lato", sans-serif;
 
-  --text-h1: 7rem;
-  --text-h2: 5rem;
-  --text-h3: 3rem
-  --text-body: 2rem;
+  --text-h1: 3rem;
+  --text-h1--font-weight: 700;
+  --text-h2: 2rem;
+  --text-h3: 1.8rem;
+  --text-body: 1rem;
   --text-logo: 1.8rem;
-  --text-btn: 1.6rem;
+  --text-btn: 1rem;
   --text-nav: 1rem;
 
   /* Shadows */
-  --shadow-glow: 0 0 25px var(--color-main);
+  --shadow-glow: 0 0 10px var(--color-main);
   --shadow-glow-lg: 0 0 50px var(--color-main);
   --shadow-glow-xl: 0 0 100px var(--color-main);
 }
+
+@utility container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+@utility btn-primary {
+  background-color: var(--color-main);
+  color: #000;
+  padding: 0.4rem 2rem;
+  border-radius: 9999px;
+  font-size: var(--text-btn);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+  box-shadow: var(--shadow-glow-lg);
+  }
+}
+
+@utility btn-outline {
+  background-color: var(--color-bg-second);
+  color: var(--color-main);
+  padding: 0.4rem 2rem;
+  border-radius: 9999px;
+  border: 2px solid var(--color-main);
+  font-size: var(--text-btn);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--color-main);
+    box-shadow: var(--shadow-glow-lg);
+    color: #000;
+  }
+}
+

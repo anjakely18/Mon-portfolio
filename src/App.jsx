@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 
 const App = () => {
   return (
-    <main>
+    <main className="bg-bg text-white font-body">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

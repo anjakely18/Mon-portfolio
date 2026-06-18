@@ -22,7 +22,7 @@ const Navbar = () => {
         <GiHamburgerMenu onClick={toggle} />
       </div>
 
-      <nav className={`flex flex-col md:flex-row transition-all duration-300 ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10 pointer-events-none"} md:opacity-100 md:translate-y-0 md:pointer-events-auto absolute w-full md:w-auto md:relative top-full left-0 bg-bg-second md:bg-transparent gap-6 md:border border-white/20 md:rounded-full px-6 py-5`}>
+      <nav className={`flex flex-col md:flex-row transition-all duration-300 ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10 pointer-events-none"} md:opacity-100 md:translate-y-0 md:pointer-events-auto absolute w-full md:w-auto md:relative top-full left-0 bg-bg-second md:bg-transparent gap-6 md:border border-main md:rounded-full px-6 py-5 shadow-glow`}>
         {links.map((link) => {
           const { id, href, text } = link;
           return (
