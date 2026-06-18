@@ -6,9 +6,9 @@ import cv from "@/assets/cv.pdf";import ParticlesWrapper from "./Particles";
 
 const Hero = () => {
   return (
-    <section className="relative flex container items-center justify-between">
+    <section className="relative flex flex-col-reverse md:flex-row container items-center justify-between gap-8 md:gap-16">
       <ParticlesWrapper className="absolute inset-0 z-0" />
-      <div className="flex flex-col items-start mt-12 max-w-lg">
+      <div className="relative z-10 flex flex-col items-start mt-12 max-w-lg">
         <h1 className="text-h1 font-title leading-tight">
           Bienvenue, je m'appelle <span className="text-main">Anja</span>
         </h1>
@@ -40,7 +40,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <a href={cv} className="btn-primary" download>
             Télécharger mon CV
           </a>
@@ -49,7 +49,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="relative top-12 w-110 h-110 rounded-full overflow-hidden cursor-pointer shadow-glow-lg hover:shadow-glow-xl transition-all duration-300">
+      <div className="relative z-10 w-70 h-70 top-12 md:w-90 md:h-90 rounded-full overflow-hidden shrink-0 cursor-pointer shadow-glow-lg hover:shadow-glow-xl transition-all duration-300">
         <img src={maPhoto} alt="ma photo" className="w-full h-full object-cover object-center" />
       </div>
     </section>
