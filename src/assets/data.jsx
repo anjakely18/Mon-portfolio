@@ -28,11 +28,12 @@ export const links = [
 
 // Infos clés - section About de la Home
 export const aboutInfo = {
-  bio: "Étudiante en BUT MMI, je me spécialise en développement web en combinant technique et créativité.",
+  bio: "Etant en dernière année de BUT MMI, je suis actuellement en alternance chez Ikko, une agence web à Strasbourg. Je suis passionnée par le développement web (nottament le front-end) et le design d'interfaces utilisateur. Mon objectif est de créer des expériences numériques engageantes et accessibles, en combinant mes compétences techniques et créatives pour répondre aux besoins des utilisateurs.",
   localisation: "Strasbourg, France",
   cards: [
-    { id: nanoid(), title: "Formation", description: "BUT MMI, 2ème année" },
-    { id: nanoid(), title: "Disponibilité", description: "Open to work" },
+    { id: nanoid(), title: "Alternante", description: "Apprentissage en entreprise chez Ikko" },
+    { id: nanoid(), title: "Etudiante en BUT MMI", description: "Dernière année en Métiers du Multimédia et de l'Internet" },
+    { id: nanoid(), title: "Disponibilité", description: "En recherche d'opportunités" },
   ],
 };
 

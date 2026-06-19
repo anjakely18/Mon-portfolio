@@ -6,13 +6,13 @@ import cv from "@/assets/cv.pdf";import ParticlesWrapper from "./Particles";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col-reverse md:flex-row container items-center justify-between gap-8 md:gap-16">
+    <section className="relative min-h-screen flex flex-col-reverse md:flex-row container items-center justify-between gap-8 md:gap-16">
       <ParticlesWrapper className="absolute inset-0 z-0" />
-      <div className="relative z-10 flex flex-col items-start mt-12 max-w-lg">
+      <div className="relative z-10 flex flex-col items-start max-w-lg">
         <h1 className="text-h1 font-title leading-tight">
           Bienvenue, je m'appelle <span className="text-main">Anja</span>
         </h1>
-        <h2 className="mb-8 mt-8 text-h2 font-title">
+        <h3 className="mb-8 mt-8 text-h3 font-title">
           Je suis{" "}
           <TypeAnimation
             sequence={[
@@ -26,7 +26,7 @@ const Hero = () => {
             repeat={Infinity}
             className="text-main"
           />
-        </h2>
+        </h3>
         <div className="flex gap-4 mb-8 text-3xl">
           <a
             href="https://www.linkedin.com/in/anja-rasamoelina-59a8352a8/"

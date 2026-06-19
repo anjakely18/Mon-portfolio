@@ -13,8 +13,11 @@
   --text-h1: 3rem;
   --text-h1--font-weight: 700;
   --text-h2: 2rem;
-  --text-h3: 1.8rem;
-  --text-body: 1rem;
+  --text-h2--font-weight: 700;
+  --text-h3: 1.4rem;
+  --text-body: 1.2rem;
+  --text-caption: 0.875rem;
+  --text-caption--font-weight: 300;
   --text-logo: 1.8rem;
   --text-btn: 1rem;
   --text-nav: 1rem;
@@ -41,6 +44,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: var(--shadow-glow);
   &:hover {
   box-shadow: var(--shadow-glow-lg);
   }
@@ -61,6 +65,16 @@
     background-color: var(--color-main);
     box-shadow: var(--shadow-glow-lg);
     color: #000;
+  }
+}
+
+@utility btn-ghost{
+  color: var(--color-main);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateX(0.5rem);
+
   }
 }
 

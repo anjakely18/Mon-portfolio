@@ -9,8 +9,9 @@ const ParticlesBackground = () => {
     <Particles
       className="absolute inset-0 z-0"
       options={{
+        fullScreen: { enable: false },
         particles: {
-          number: { value: 80 },
+          number: { value: 100 },
           color: { value: "#ae90e9" },
           opacity: { value: { min: 0.1, max: 0.5 } },
           size: { value: { min: 1, max: 3 } },
