@@ -105,32 +105,37 @@ export const skills = [
   {
     id: nanoid(),
     title: "Développement Front-End",
-    icon: <FaReact className="skill-icon" />,
-    text: "Création d'interfaces dynamiques et responsives avec HTML5, CSS3 (Sass, Tailwind CSS, Bootstrap) et JavaScript ES6+. Solide expérience avec React.js pour le développement de composants réactifs, gestion d’état et routing. Intégration soignée en suivant les bonnes pratiques d’accessibilité et de performance.",
+    icon: <FaReact className="text-2xl text-main" />,
+    text: "Création d’interfaces dynamiques et responsives avec HTML5, CSS3 (Sass, Tailwind CSS, Bootstrap) et JavaScript ES6+. Solide expérience avec React.js pour le développement de composants réactifs, gestion d’état et routing. Intégration soignée en suivant les bonnes pratiques d’accessibilité et de performance.",
+    techs: ["HTML5", "CSS3", "JavaScript ES6+", "React", "Tailwind CSS", "Sass", "Bootstrap"],
   },
   {
     id: nanoid(),
     title: "Développement Back-End",
-    icon: <SiPhp className="skill-icon" />,
+    icon: <SiPhp className="text-2xl text-main" />,
     text: "Développement back-end avec PHP (approfondi via le framework Symfony) et gestion de templates avec Twig. Maîtrise des bases de données relationnelles avec MySQL. Conception de systèmes CRUD, gestion des utilisateurs et logique serveur sécurisée.",
+    techs: ["PHP", "Symfony", "Twig", "MySQL"],
   },
   {
     id: nanoid(),
     title: "UI/UX Design & Prototypage",
-    icon: <FaFigma className="skill-icon" />,
+    icon: <FaFigma className="text-2xl text-main" />,
     text: "Conception d’expériences utilisateurs intuitives et attractives à l’aide de Figma : wireframes, prototypes interactifs, tests utilisateurs. Création graphique avec Adobe Illustrator, Photoshop et InDesign pour des visuels web et print cohérents.",
+    techs: ["Figma", "Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign"],
   },
   {
     id: nanoid(),
     title: "Gestion de Projet & Communication Digitale",
-    icon: <MdCampaign className="skill-icon" />,
+    icon: <MdCampaign className="text-2xl text-main" />,
     text: "Planification et coordination de projets en équipe avec la méthode Agile. Compétences en communication digitale, élaboration de stratégies de contenu, optimisation SEO et suivi des performances des projets numériques.",
+    techs: ["Méthode Agile", "SEO", "Trello", "Notion"],
   },
   {
     id: nanoid(),
     title: "Outils de Développement & Collaboration",
-    icon: <FaCode className="skill-icon" />,
+    icon: <FaCode className="text-2xl text-main" />,
     text: "Utilisation professionnelle de Git et GitHub pour le versioning et la collaboration. Connaissance des environnements de développement (Visual Studio Code, Plesk), gestion de projets sur Trello ou Notion. Autonomie dans le déploiement de sites sur serveur mutualisé ou via FTP.",
+    techs: ["Git", "GitHub", "VS Code", "WordPress", "Plesk"],
   },
 ];
 
