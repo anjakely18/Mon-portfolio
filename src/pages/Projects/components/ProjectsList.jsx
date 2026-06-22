@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { projects } from "@/assets/data";
 import ProjectsCard from "@/components/ProjectsCard";
 
@@ -39,9 +40,9 @@ const ProjectsList = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.slice(0, visible).map((project) => (
-          <a key={project.id} href={project.url} target="_blank" rel="noopener noreferrer">
+          <Link key={project.id} to={`/projects/${project.slug}`}>
             <ProjectsCard {...project} />
-          </a>
+          </Link>
         ))}
       </div>
 
