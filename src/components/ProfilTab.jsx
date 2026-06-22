@@ -1,0 +1,52 @@
+import ReactCountryFlag from "react-country-flag";
+import { profilData } from "@/assets/data";
+
+const ProfilTab = () => {
+  const { histoire, langues, valeurs, interets } = profilData;
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+      {/* Histoire — grand bloc */}
+      <div className="md:col-span-2 md:row-span-2 bg-bg-second rounded-2xl p-8 flex flex-col gap-4">
+        <span className="text-caption text-main font-bold uppercase tracking-widest">Mon histoire</span>
+        <p className="text-body text-white/80 leading-relaxed">{histoire}</p>
+      </div>
+
+      {/* Langues */}
+      {langues.map((langue, i) => (
+        <div key={i} className="bg-bg-second rounded-2xl p-6 flex items-center gap-4">
+          <ReactCountryFlag countryCode={langue.code} svg style={{ width: "2.5rem", height: "2.5rem", borderRadius: "50%" }} />
+          <div>
+            <p className="font-bold font-title">{langue.name}</p>
+            <p className="text-caption text-white/50">{langue.level}</p>
+          </div>
+        </div>
+      ))}
+
+      {/* Valeurs */}
+      {valeurs.map((valeur, i) => (
+        <div key={i} className="bg-bg-second rounded-2xl p-6 flex flex-col gap-3">
+          {valeur.icon}
+          <h4 className="font-bold font-title">{valeur.title}</h4>
+          <p className="text-caption text-white/60">{valeur.description}</p>
+        </div>
+      ))}
+
+      {/* Centres d'intérêt */}
+      <div className="md:col-span-3 bg-bg-second rounded-2xl p-6">
+        <span className="text-caption text-main font-bold uppercase tracking-widest block mb-4">Centres d&apos;intérêt</span>
+        <div className="flex flex-wrap gap-2">
+          {interets.map((interet, i) => (
+            <span key={i} className="px-4 py-2 rounded-full border border-main/30 text-caption hover:border-main hover:text-main transition-all duration-300">
+              {interet}
+            </span>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  );
+};
+
+export default ProfilTab;

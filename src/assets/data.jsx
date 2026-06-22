@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { FaCode, FaJs, FaReact, FaFigma } from "react-icons/fa";
+import { FaCode, FaJs, FaReact, FaFigma, FaCheckDouble, FaLightbulb, FaSearch, FaUsers } from "react-icons/fa";
 import { MdCampaign } from "react-icons/md";
 import {
   SiAdobeillustrator,
@@ -23,6 +23,61 @@ export const pageHeroes = {
   skills:   { title: "Compétences", subtitle: "Les outils avec lesquels je crée"  },
   projects: { title: "Projets",     subtitle: "Ce que j'ai conçu et développé"    },
   contact:  { title: "Contact",     subtitle: "Discutons de vos opportunités"     },
+};
+
+// Données de la page About — onglets timeline
+export const formations = [
+  {
+    date: "2022 — 2025",
+    title: "BUT Métiers du Multimédia et de l'Internet",
+    organisation: "IUT Robert Schuman — Université de Strasbourg",
+    description: "Formation pluridisciplinaire couvrant le développement web, le design UI/UX, la communication digitale et la gestion de projet.",
+  },
+  {
+    date: "2022",
+    title: "Baccalauréat",
+    organisation: "À compléter",
+    description: "",
+  },
+];
+
+export const experiences = [
+  {
+    date: "2024 — 2025",
+    title: "Développeuse web en alternance",
+    organisation: "Ikko — Strasbourg",
+    description: "Développement et intégration de sites web au sein d'une agence web. Travail sur des projets clients réels en équipe.",
+  },
+  {
+    date: "2024",
+    title: "Stage — Refonte de site web",
+    organisation: "CNRS Délégation Alsace — Strasbourg",
+    description: "Refonte du site Tous Chercheurs Alsace via WordPress et Elementor. Restructuration de la navigation, intégration d'un calendrier dynamique.",
+  },
+];
+
+export const certifications = [
+  {
+    img: "https://placehold.co/600x400",
+    title: "À compléter",
+    text: "Description du certificat à compléter.",
+  },
+];
+
+export const profilData = {
+  histoire: "Passionnée par le web depuis le lycée, j'ai choisi le BUT MMI pour combiner créativité et technique. Trois ans plus tard, j'ai développé une vraie appétence pour le front-end — ce moment où un design Figma prend vie dans le navigateur. Mon alternance chez Ikko m'a confrontée à des projets réels, des contraintes client, et des deadlines : exactement ce dont j'avais besoin pour grandir.",
+  langues: [
+    { code: "FR", name: "Français", level: "Natif" },
+    { code: "GB", name: "Anglais",  level: "Courant (B2)" },
+    { code: "MG", name: "Malgache", level: "Natif" },
+  ],
+  valeurs: [
+    { icon: <FaCheckDouble className="text-2xl text-main" />, title: "Rigueur",       description: "Un code propre et maintenable, c'est un respect pour les personnes qui liront le projet après moi." },
+    { icon: <FaLightbulb  className="text-2xl text-main" />, title: "Créativité",    description: "Chaque projet est une occasion de proposer quelque chose de visuellement fort et mémorable." },
+    { icon: <FaSearch     className="text-2xl text-main" />, title: "Curiosité",     description: "Je me tiens à jour sur les nouvelles technos — pas par obligation, mais par vraie passion." },
+    { icon: <FaUsers      className="text-2xl text-main" />, title: "Collaboration", description: "Les meilleurs projets naissent d'une bonne communication entre dev, design et client." },
+  ],
+  interets: ["UI Design", "Typographie", "Photographie", "Jeux vidéo", "Musique", "Voyages"],
 };
 
 // Liens de navigation

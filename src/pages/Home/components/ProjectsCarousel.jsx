@@ -2,7 +2,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { projects } from "@/assets/data";
-import ProjectsCard from "./ProjectsCard";
+import ProjectsCard from "@/components/ProjectsCard";
 
 const ProjectsCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
