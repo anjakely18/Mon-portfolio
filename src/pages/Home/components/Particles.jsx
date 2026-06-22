@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Particles, ParticlesProvider, useParticlesProvider } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 

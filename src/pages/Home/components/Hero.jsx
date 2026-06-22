@@ -1,4 +1,3 @@
-import React from "react";
 import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import maPhoto from "@/assets/me.png";
@@ -33,10 +32,10 @@ const Hero = () => {
             target="_blank"
             className="border border-main rounded-full p-2 transition-all duration-300 hover:bg-main hover:text-bg"
           >
-            <FaLinkedinIn className="icon-link" />
+            <FaLinkedinIn />
           </a>
           <a href="https://github.com/anjakely18" target="_blank" className="border border-main rounded-full p-2 transition-all duration-300 hover:bg-main hover:text-bg">
-            <FaGithub className="icon-link" />
+            <FaGithub />
           </a>
         </div>
 
