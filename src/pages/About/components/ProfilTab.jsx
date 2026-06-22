@@ -1,4 +1,5 @@
 import ReactCountryFlag from "react-country-flag";
+import FeatureCard from "@/components/FeatureCard";
 import { profilData } from "@/assets/data";
 
 const ProfilTab = () => {
@@ -7,31 +8,32 @@ const ProfilTab = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-      {/* Histoire — grand bloc */}
-      <div className="md:col-span-2 md:row-span-2 bg-bg-second rounded-2xl p-8 flex flex-col gap-4">
+      {/* Histoire */}
+      <div className="md:col-span-2 bg-bg-second rounded-2xl p-8 flex flex-col gap-4">
         <span className="text-caption text-main font-bold uppercase tracking-widest">Mon histoire</span>
         <p className="text-body text-white/80 leading-relaxed">{histoire}</p>
       </div>
 
-      {/* Langues */}
-      {langues.map((langue, i) => (
-        <div key={i} className="bg-bg-second rounded-2xl p-6 flex items-center gap-4">
-          <ReactCountryFlag countryCode={langue.code} svg style={{ width: "2.5rem", height: "2.5rem", borderRadius: "50%" }} />
-          <div>
-            <p className="font-bold font-title">{langue.name}</p>
-            <p className="text-caption text-white/50">{langue.level}</p>
+      {/* Langues — regroupées */}
+      <div className="bg-bg-second rounded-2xl p-6 flex flex-col justify-center gap-5">
+        <span className="text-caption text-main font-bold uppercase tracking-widest">Langues</span>
+        {langues.map((langue, i) => (
+          <div key={i} className="flex items-center gap-3">
+            <ReactCountryFlag countryCode={langue.code} svg style={{ width: "2rem", height: "2rem", borderRadius: "50%" }} />
+            <div>
+              <p className="font-bold font-title">{langue.name}</p>
+              <p className="text-caption text-white/50">{langue.level}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
-      {/* Valeurs */}
-      {valeurs.map((valeur, i) => (
-        <div key={i} className="bg-bg-second rounded-2xl p-6 flex flex-col gap-3">
-          {valeur.icon}
-          <h4 className="font-bold font-title">{valeur.title}</h4>
-          <p className="text-caption text-white/60">{valeur.description}</p>
-        </div>
-      ))}
+      {/* Valeurs — 4 colonnes */}
+      <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-4">
+        {valeurs.map((valeur, i) => (
+          <FeatureCard key={i} icon={valeur.icon} title={valeur.title} description={valeur.description} />
+        ))}
+      </div>
 
       {/* Centres d'intérêt */}
       <div className="md:col-span-3 bg-bg-second rounded-2xl p-6">
