@@ -1,34 +1,34 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import FeatureCard from "@/components/FeatureCard";
 import { skills } from "@/assets/data";
+import SkillDetail from "./SkillDetail";
 
 const SkillsAccordion = () => {
-  const [activeId, setActiveId] = useState(null);
+  const [activeId, setActiveId] = useState(skills[0]?.id || null);
 
   const toggle = (id) => setActiveId((prev) => (prev === id ? null : id));
 
   const activeSkill = skills.find((s) => s.id === activeId);
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-25">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {skills.map((skill) => {
-          const isActive = activeId === skill.id;
-          return (
-            <button
-              key={skill.id}
+        {skills.map((skill) => (
+          <React.Fragment key={skill.id}>
+            <FeatureCard
+              icon={skill.icon}
+              title={skill.title}
               onClick={() => toggle(skill.id)}
-              className={`bg-bg-second rounded-2xl p-6 flex items-center gap-4 text-left cursor-pointer transition-all duration-300 border ${
-                isActive
-                  ? "border-main shadow-glow"
-                  : "border-transparent hover:border-main/30"
-              }`}
-            >
-              {skill.icon}
-              <span className="font-bold font-title text-h3">{skill.title}</span>
-            </button>
-          );
-        })}
+              isActive={activeId === skill.id}
+            />
+            {skill.id === activeId && (
+              <div className="col-span-full md:hidden py-2">
+                <SkillDetail skill={skill} />
+              </div>
+            )}
+          </React.Fragment>
+        ))}
       </div>
 
       <AnimatePresence mode="wait">
@@ -39,23 +39,9 @@ const SkillsAccordion = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 16 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="bg-bg-second rounded-2xl p-8 flex flex-col gap-4"
+            className="hidden md:flex flex-col gap-4 px-2"
           >
-            <div className="flex items-center gap-4">
-              {activeSkill.icon}
-              <h3 className="font-bold font-title text-h3">{activeSkill.title}</h3>
-            </div>
-            <p className="text-body text-white/70">{activeSkill.text}</p>
-            <div className="flex flex-wrap gap-2">
-              {activeSkill.techs.map((tech, i) => (
-                <span
-                  key={i}
-                  className="px-3 py-1 rounded-full border border-main/30 text-caption text-main"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <SkillDetail skill={activeSkill} />
           </motion.div>
         )}
       </AnimatePresence>
