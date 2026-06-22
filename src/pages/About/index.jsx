@@ -1,8 +1,9 @@
 import PageHero from "@/components/PageHero";
 import Tabs from "@/components/Tabs";
-import TimelineTab from "@/components/TimelineTab";
+import TimelineTab from "./components/TimelineTab";
 import CertificationsTab from "@/components/CertificationsTab";
-import ProfilTab from "@/components/ProfilTab";
+import ProfilTab from "./components/ProfilTab";
+import AnimatedSection from "@/components/AnimatedSection";
 import { pageHeroes, formations, experiences, certifications } from "@/assets/data";
 
 const tabs = [
@@ -16,9 +17,11 @@ const About = () => {
   return (
     <>
       <PageHero {...pageHeroes.about} />
-      <section className="container py-20 md:py-32">
-        <Tabs tabs={tabs} />
-      </section>
+      <AnimatedSection>
+        <section className="container py-20 md:py-32">
+          <Tabs tabs={tabs} />
+        </section>
+      </AnimatedSection>
     </>
   );
 };
