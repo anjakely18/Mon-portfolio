@@ -23,7 +23,7 @@ const About = () => {
         </AnimatedSection>
         <AnimatedSection delay={0.2} className="flex flex-col gap-4 md:w-1/2">
           {aboutInfo.cards.map((card) => (
-            <FeatureCard key={card.id} title={card.title} description={card.description} />
+            <FeatureCard key={card.id} icon={card.icon} title={card.title} description={card.description} />
           ))}
         </AnimatedSection>
       </div>

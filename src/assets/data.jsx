@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { FaCode, FaJs, FaReact, FaFigma, FaCheckDouble, FaLightbulb, FaSearch, FaUsers } from "react-icons/fa";
+import { FaCode, FaJs, FaReact, FaFigma, FaCheckDouble, FaLightbulb, FaSearch, FaUsers, FaBriefcase, FaGraduationCap, FaCalendarCheck } from "react-icons/fa";
 import { MdCampaign } from "react-icons/md";
 import {
   SiAdobeillustrator,
@@ -94,9 +94,9 @@ export const aboutInfo = {
   bio: "Etant en dernière année de BUT MMI, je suis actuellement en alternance chez Ikko, une agence web à Strasbourg. Je suis passionnée par le développement web (nottament le front-end) et le design d'interfaces utilisateur. Mon objectif est de créer des expériences numériques engageantes et accessibles, en combinant mes compétences techniques et créatives pour répondre aux besoins des utilisateurs.",
   localisation: "Strasbourg, France",
   cards: [
-    { id: nanoid(), title: "Alternante", description: "Apprentissage en entreprise chez Ikko" },
-    { id: nanoid(), title: "Etudiante en BUT MMI", description: "Dernière année en Métiers du Multimédia et de l'Internet" },
-    { id: nanoid(), title: "Disponibilité", description: "En recherche d'opportunités" },
+    { id: nanoid(), icon: <FaBriefcase className="text-2xl text-main" />, title: "Alternante", description: "Apprentissage en entreprise chez Ikko" },
+    { id: nanoid(), icon: <FaGraduationCap className="text-2xl text-main" />, title: "Etudiante en BUT MMI", description: "Dernière année en Métiers du Multimédia et de l'Internet" },
+    { id: nanoid(), icon: <FaCalendarCheck className="text-2xl text-main" />, title: "Disponibilité", description: "En recherche d'opportunités" },
   ],
 };
 
