@@ -3,6 +3,7 @@ import About from "./components/InfoCard";
 import Stack from "./components/Stack";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import CTA from "./components/CTA";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <Skills />
       <Projects />
+      <CTA />
     </div>
   );
 };
