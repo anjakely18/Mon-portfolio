@@ -1,5 +1,5 @@
 import Hero from "./components/Hero";
-import About from "./components/InfoCard";
+import About from "./components/About";
 import Stack from "./components/Stack";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";

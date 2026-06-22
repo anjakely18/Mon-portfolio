@@ -1,9 +1,9 @@
 import SectionTitle from "@/components/SectionTitle";
-import InfoCard from "@/components/InfoCard";
 import { aboutInfo } from "@/assets/data";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 import AnimatedSection from "@/components/AnimatedSection";
+import FeatureCard from "@/components/FeatureCard";
 
 const About = () => {
   return (
@@ -23,7 +23,7 @@ const About = () => {
         </AnimatedSection>
         <AnimatedSection delay={0.2} className="flex flex-col gap-4 md:w-1/2">
           {aboutInfo.cards.map((card) => (
-            <InfoCard key={card.id} title={card.title} description={card.description} />
+            <FeatureCard key={card.id} title={card.title} description={card.description} />
           ))}
         </AnimatedSection>
       </div>
