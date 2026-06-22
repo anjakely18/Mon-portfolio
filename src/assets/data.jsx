@@ -17,6 +17,14 @@ import touschercheurs from "./touschercheurs.png";
 import unity from "./unity.png";
 
 
+// Hero des pages internes
+export const pageHeroes = {
+  about:    { title: "À propos",    subtitle: "Mon parcours et mes valeurs"       },
+  skills:   { title: "Compétences", subtitle: "Les outils avec lesquels je crée"  },
+  projects: { title: "Projets",     subtitle: "Ce que j'ai conçu et développé"    },
+  contact:  { title: "Contact",     subtitle: "Discutons de vos opportunités"     },
+};
+
 // Liens de navigation
 export const links = [
   { id: nanoid(), href: "/", text: "Accueil" },
