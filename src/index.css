@@ -78,6 +78,15 @@
   }
 }
 
+@utility skill-icon {
+  font-size: 2rem;
+  color: var(--color-main);
+}
+
+@utility icon-link {
+  font-size: 1.2rem;
+}
+
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }

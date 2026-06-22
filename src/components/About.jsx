@@ -1,5 +1,3 @@
-import React from "react";
-import Skills from "./Skills";
 import SectionTitle from "./SectionTitle";
 
 const About = () => {
@@ -23,7 +21,7 @@ const About = () => {
           continuer à apprendre et créer des expériences numériques innovantes.
           Merci de visiter mon portfolio !
         </p>
-        <Skills />
+
       </div>
     </section>
   );

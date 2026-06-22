@@ -5,8 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-
+// import Skills from "./components/Skills";
 const App = () => {
   return (
     <main className="bg-bg text-white font-body">
@@ -16,7 +15,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/skills" element={<Skills />} />
+        {/* <Route path="/skills" element={<Skills />} /> */}
       </Routes>
       <Footer />
     </main>
