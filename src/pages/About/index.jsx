@@ -1,7 +1,7 @@
 import PageHero from "@/components/PageHero";
 import Tabs from "@/components/Tabs";
 import TimelineTab from "./components/TimelineTab";
-import CertificationsTab from "@/components/CertificationsTab";
+import CertificationsTab from "./components/CertificationsTab";
 import ProfilTab from "./components/ProfilTab";
 import AnimatedSection from "@/components/AnimatedSection";
 import { pageHeroes, formations, experiences, certifications } from "@/assets/data";
