@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import ProjectsCard from "@/components/ProjectsCard";
+import CertificationCard from "@/components/CertificationCard";
 
 const CertificationsTab = ({ items }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {items.map((item, index) => (
-        <ProjectsCard key={index} {...item} />
+        <CertificationCard key={index} {...item} />
       ))}
     </div>
   );

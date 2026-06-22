@@ -56,6 +56,8 @@ export const certifications = [
     img: "https://placehold.co/600x400",
     title: "À compléter",
     text: "Description du certificat à compléter.",
+    date: "Juin 2024",
+    issuer: "Organisme",
   },
 ];
 
