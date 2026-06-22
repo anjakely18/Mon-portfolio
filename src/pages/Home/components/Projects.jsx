@@ -1,15 +1,20 @@
-import SectionTitle from "./SectionTitle";
-import { projects } from "../assets/data";
-import ProjectsCard from "./ProjectsCard";
+import SectionTitle from "@/components/SectionTitle";
+import ProjectsCarousel from "./ProjectsCarousel";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <section className="projects" id="projects">
-      <SectionTitle title="Mes Projets" />
-      <div className="projects-container">
-        {projects.map((project) => {
-          return <ProjectsCard key={project.id} {...project} />;
-        })}
+    <section className="container">
+      <div className="flex justify-between">
+        <SectionTitle title="Mes Projets" />
+        <Link to="/projects" className="btn-ghost">
+          Voir tout <FaArrowRight className="inline-block ml-2" />
+        </Link>
+      </div>
+ 
+      <div className="mt-12">
+        <ProjectsCarousel />
       </div>
     </section>
   );

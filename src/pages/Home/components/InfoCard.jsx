@@ -6,7 +6,7 @@ import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="container py-20 md:py-32">
+    <section className="container">
       <SectionTitle className="main text-h2 font-title" title="Tout sur moi" />
       <div className="flex flex-col md:flex-row gap-8 md:gap-16 mt-12">
         <div className="flex flex-col gap-4 md:w-1/2">

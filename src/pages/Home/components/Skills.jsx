@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <section className="container">
+    <section className="container py-20 md:py-32">
       <div className="flex justify-between">
         <SectionTitle className="main text-h2 font-title" title="Mes compétences" />
         <Link to="/skills" className="btn-ghost">Voir tout <FaArrowRight className="inline-block ml-2" /></Link>
