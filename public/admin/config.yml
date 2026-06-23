@@ -41,3 +41,26 @@ collections:
                 widget: list
                 field: { name: image, label: Image, widget: image }
 
+  # ─── Compétences ────────────────────────────────────────────────────────────
+  - name: "skills"
+    label: "Compétences"
+    files:
+      - name: "skills"
+        label: "Liste des compétences"
+        file: "src/content/skills.json"
+        fields:
+          - name: skills
+            label: Compétences
+            widget: list
+            fields:
+              - { name: title, label: Titre, widget: string }
+              - name: icon
+                label: Icône
+                widget: select
+                options: [code, react, figma, php, checkDouble, lightbulb, search, users, briefcase, graduationCap, calendarCheck, campaign]
+              - { name: text, label: Description, widget: text }
+              - name: techs
+                label: Technologies
+                widget: list
+                field: { name: tech, label: Technologie, widget: string }
+

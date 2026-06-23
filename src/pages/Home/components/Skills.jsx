@@ -1,4 +1,5 @@
-import { skills } from "@/assets/data";
+import skillsData from "@/content/skills.json";
+const skills = skillsData.skills;
 import FeatureCard from "@/components/FeatureCard";
 import SectionTitle from "@/components/SectionTitle";
 import { Link } from "react-router-dom";

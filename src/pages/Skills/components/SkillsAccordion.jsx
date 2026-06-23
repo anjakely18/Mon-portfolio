@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FeatureCard from "@/components/FeatureCard";
-import { skills } from "@/assets/data";
+import skillsData from "@/content/skills.json";
+const skills = skillsData.skills;
 import SkillDetail from "./SkillDetail";
 import iconMap from "@/utils/iconMap";
 
