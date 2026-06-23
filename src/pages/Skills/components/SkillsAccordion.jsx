@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import FeatureCard from "@/components/FeatureCard";
 import { skills } from "@/assets/data";
 import SkillDetail from "./SkillDetail";
+import iconMap from "@/utils/iconMap";
 
 const SkillsAccordion = () => {
   const [activeId, setActiveId] = useState(skills[0]?.id || null);
@@ -14,10 +15,12 @@ const SkillsAccordion = () => {
   return (
     <div className="flex flex-col gap-25">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {skills.map((skill) => (
+        {skills.map((skill) => {
+          const Icon = iconMap[skill.icon];
+          return (
           <React.Fragment key={skill.id}>
             <FeatureCard
-              icon={skill.icon}
+              icon={<Icon className="text-2xl text-main" />}
               title={skill.title}
               onClick={() => toggle(skill.id)}
               isActive={activeId === skill.id}
@@ -28,7 +31,8 @@ const SkillsAccordion = () => {
               </div>
             )}
           </React.Fragment>
-        ))}
+          );
+        })}
       </div>
 
       <AnimatePresence mode="wait">

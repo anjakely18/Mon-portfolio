@@ -1,6 +1,7 @@
 import ReactCountryFlag from "react-country-flag";
 import FeatureCard from "@/components/FeatureCard";
 import { profilData } from "@/assets/data";
+import iconMap from "@/utils/iconMap";
 
 const ProfilTab = () => {
   const { histoire, langues, valeurs, interets } = profilData;
@@ -30,9 +31,12 @@ const ProfilTab = () => {
 
       {/* Valeurs — 4 colonnes */}
       <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-4">
-        {valeurs.map((valeur, i) => (
-          <FeatureCard key={i} icon={valeur.icon} title={valeur.title} description={valeur.description} />
-        ))}
+        {valeurs.map((valeur, i) => {
+          const Icon = iconMap[valeur.icon];
+          return (
+            <FeatureCard key={i} icon={<Icon className="text-2xl text-main" />} title={valeur.title} description={valeur.description} />
+          );
+        })}
       </div>
 
       {/* Centres d'intérêt */}

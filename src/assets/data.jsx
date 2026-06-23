@@ -1,9 +1,4 @@
 import { nanoid } from "nanoid";
-import { FaCode, FaJs, FaReact, FaFigma, FaCheckDouble, FaLightbulb, FaSearch, FaUsers, FaBriefcase, FaGraduationCap, FaCalendarCheck } from "react-icons/fa";
-import { MdCampaign } from "react-icons/md";
-import {
-  SiPhp,
-} from "react-icons/si";
 import cuej from "./cuej.png";
 import sobriete from "./sae.png";
 import sig from "./sig.png";
@@ -69,10 +64,10 @@ export const profilData = {
     { code: "MG", name: "Malgache", level: "Natif" },
   ],
   valeurs: [
-    { icon: <FaCheckDouble className="text-2xl text-main" />, title: "Rigueur",       description: "Un code propre et maintenable, c'est un respect pour les personnes qui liront le projet après moi." },
-    { icon: <FaLightbulb  className="text-2xl text-main" />, title: "Créativité",    description: "Chaque projet est une occasion de proposer quelque chose de visuellement fort et mémorable." },
-    { icon: <FaSearch     className="text-2xl text-main" />, title: "Curiosité",     description: "Je me tiens à jour sur les nouvelles technos — pas par obligation, mais par vraie passion." },
-    { icon: <FaUsers      className="text-2xl text-main" />, title: "Collaboration", description: "Les meilleurs projets naissent d'une bonne communication entre dev, design et client." },
+    { icon: "checkDouble", title: "Rigueur",       description: "Un code propre et maintenable, c'est un respect pour les personnes qui liront le projet après moi." },
+    { icon: "lightbulb",   title: "Créativité",    description: "Chaque projet est une occasion de proposer quelque chose de visuellement fort et mémorable." },
+    { icon: "search",      title: "Curiosité",     description: "Je me tiens à jour sur les nouvelles technos — pas par obligation, mais par vraie passion." },
+    { icon: "users",       title: "Collaboration", description: "Les meilleurs projets naissent d'une bonne communication entre dev, design et client." },
   ],
   interets: ["UI Design", "Typographie", "Photographie", "Jeux vidéo", "Musique", "Voyages"],
 };
@@ -91,9 +86,9 @@ export const aboutInfo = {
   bio: "Etant en dernière année de BUT MMI, je suis actuellement en alternance chez Ikko, une agence web à Strasbourg. Je suis passionnée par le développement web (nottament le front-end) et le design d'interfaces utilisateur. Mon objectif est de créer des expériences numériques engageantes et accessibles, en combinant mes compétences techniques et créatives pour répondre aux besoins des utilisateurs.",
   localisation: "Strasbourg, France",
   cards: [
-    { id: nanoid(), icon: <FaBriefcase className="text-2xl text-main" />, title: "Alternante", description: "Apprentissage en entreprise chez Ikko" },
-    { id: nanoid(), icon: <FaGraduationCap className="text-2xl text-main" />, title: "Etudiante en BUT MMI", description: "Dernière année en Métiers du Multimédia et de l'Internet" },
-    { id: nanoid(), icon: <FaCalendarCheck className="text-2xl text-main" />, title: "Disponibilité", description: "En recherche d'opportunités" },
+    { id: nanoid(), icon: "briefcase",     title: "Alternante",          description: "Apprentissage en entreprise chez Ikko" },
+    { id: nanoid(), icon: "graduationCap", title: "Etudiante en BUT MMI", description: "Dernière année en Métiers du Multimédia et de l'Internet" },
+    { id: nanoid(), icon: "calendarCheck", title: "Disponibilité",        description: "En recherche d'opportunités" },
   ],
 };
 
@@ -102,35 +97,35 @@ export const skills = [
   {
     id: nanoid(),
     title: "Développement Front-End",
-    icon: <FaReact className="text-2xl text-main" />,
+    icon: "react",
     text: "Création d’interfaces dynamiques et responsives avec HTML5, CSS3 (Sass, Tailwind CSS, Bootstrap) et JavaScript ES6+. Solide expérience avec React.js pour le développement de composants réactifs, gestion d’état et routing. Intégration soignée en suivant les bonnes pratiques d’accessibilité et de performance.",
     techs: ["HTML5", "CSS3", "JavaScript ES6+", "React", "Tailwind CSS", "Sass", "Bootstrap"],
   },
   {
     id: nanoid(),
     title: "Développement Back-End",
-    icon: <SiPhp className="text-2xl text-main" />,
+    icon: "php",
     text: "Développement back-end avec PHP (approfondi via le framework Symfony) et gestion de templates avec Twig. Maîtrise des bases de données relationnelles avec MySQL. Conception de systèmes CRUD, gestion des utilisateurs et logique serveur sécurisée.",
     techs: ["PHP", "Symfony", "Twig", "MySQL"],
   },
   {
     id: nanoid(),
     title: "UI/UX Design & Prototypage",
-    icon: <FaFigma className="text-2xl text-main" />,
+    icon: "figma",
     text: "Conception d’expériences utilisateurs intuitives et attractives à l’aide de Figma : wireframes, prototypes interactifs, tests utilisateurs. Création graphique avec Adobe Illustrator, Photoshop et InDesign pour des visuels web et print cohérents.",
     techs: ["Figma", "Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign"],
   },
   {
     id: nanoid(),
     title: "Gestion de Projet & Communication Digitale",
-    icon: <MdCampaign className="text-2xl text-main" />,
+    icon: "campaign",
     text: "Planification et coordination de projets en équipe avec la méthode Agile. Compétences en communication digitale, élaboration de stratégies de contenu, optimisation SEO et suivi des performances des projets numériques.",
     techs: ["Méthode Agile", "SEO", "Trello", "Notion"],
   },
   {
     id: nanoid(),
     title: "Outils de Développement & Collaboration",
-    icon: <FaCode className="text-2xl text-main" />,
+    icon: "code",
     text: "Utilisation professionnelle de Git et GitHub pour le versioning et la collaboration. Connaissance des environnements de développement (Visual Studio Code, Plesk), gestion de projets sur Trello ou Notion. Autonomie dans le déploiement de sites sur serveur mutualisé ou via FTP.",
     techs: ["Git", "GitHub", "VS Code", "WordPress", "Plesk"],
   },

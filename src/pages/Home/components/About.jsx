@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 import AnimatedSection from "@/components/AnimatedSection";
 import FeatureCard from "@/components/FeatureCard";
+import iconMap from "@/utils/iconMap";
 
 const About = () => {
   return (
@@ -22,9 +23,12 @@ const About = () => {
           </Link>
         </AnimatedSection>
         <AnimatedSection delay={0.2} className="flex flex-col gap-4 md:w-1/2">
-          {aboutInfo.cards.map((card) => (
-            <FeatureCard key={card.id} icon={card.icon} title={card.title} description={card.description} />
-          ))}
+          {aboutInfo.cards.map((card) => {
+            const Icon = iconMap[card.icon];
+            return (
+              <FeatureCard key={card.id} icon={<Icon className="text-2xl text-main" />} title={card.title} description={card.description} />
+            );
+          })}
         </AnimatedSection>
       </div>
     </section>

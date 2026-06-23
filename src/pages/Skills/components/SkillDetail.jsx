@@ -1,9 +1,12 @@
 import PropTypes from "prop-types";
+import iconMap from "@/utils/iconMap";
 
-const SkillDetail = ({ skill }) => (
+const SkillDetail = ({ skill }) => {
+  const Icon = iconMap[skill.icon];
+  return (
   <div className="flex flex-col gap-4 px-2">
     <div className="flex items-center gap-4">
-      {skill.icon}
+      <Icon className="text-2xl text-main" />
       <h3 className="font-bold font-title text-h3">{skill.title}</h3>
     </div>
     <p className="text-body text-white/70">{skill.text}</p>
@@ -15,7 +18,8 @@ const SkillDetail = ({ skill }) => (
       ))}
     </div>
   </div>
-);
+  );
+};
 
 SkillDetail.propTypes = {
   skill: PropTypes.shape({
