@@ -1,3 +1,29 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "github": "https://github.com/anjakely18/SITE-CUEJ",
+      "approach": "J’ai conçu et développé une architecture PHP avec base de données MySQL pour gérer dynamiquement les articles et médias. J’ai travaillé à la fois sur la partie back-end (gestion des données, logique serveur) et front-end (intégration, navigation), en veillant à ce que l’interface soit intuitive pour des utilisateurs non-techniciens.",
+      "slug": "cuej-ruraux-2024",
+      "text": "Ce projet est une collaboration entre l'école de journalisme CUEJ et des étudiants en deuxième année en BUT MMI. Il avait pour but de permettre  aux étudiants en journalisme de publier des reportages sur la vie rurale. Développé en PHP, Javascript, CSS et HTML avec une base de données MySQL pour gérer les articles et médias. J’ai principalement travaillé sur le développement back-end et front-end, assurant aux le développement des différents blocs ainsi que la structure dynamique du projet pour permettre facilement aux futurs journalistes d'insérer du contenu.",
+      "url": "https://www.cuej.info/mini-sites/ruraux2024/index.php?",
+      "context": "Le Centre Universitaire d’Enseignement du Journalisme (CUEJ) avait besoin d’un mini-site dédié à sa couverture \\\"Ruraux 2024\\\", permettant à ses étudiants de publier et gérer leurs reportages en ligne dans un environnement qu’ils contrôlent entièrement.",
+      "gallery": [
+        "/images/uploads/cuej-1.png",
+        "/images/uploads/cuej-4.jpg",
+        "/images/uploads/cuej-2.png",
+        "/images/uploads/cuej-3.png"
+      ],
+      "duration": "2 semaines",
+      "role": "Développeuse front et back",
+      "title": "Cœurs Déter' S'engager dans sa ruralité",
+      "result": "Un mini-site fonctionnel livré et utilisé par les étudiants du CUEJ pour publier leurs reportages. Ce projet m’a permis de consolider mes compétences full-stack et de travailler dans un contexte réel avec des contraintes éditoriales.\"",
+      "techs": [
+        "PHP",
+        "Javascript",
+        "CSS",
+        "Github"
+      ],
+      "category": "Développement"
+    }
+  ]
 }
