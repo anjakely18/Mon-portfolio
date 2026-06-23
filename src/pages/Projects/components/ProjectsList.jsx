@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { projects } from "@/assets/data";
+import projectsData from "@/content/projects.json";
+const projects = projectsData.projects;
 import ProjectsCard from "@/components/ProjectsCard";
 
 const CATEGORIES = ["Tous", "Développement", "Design", "Jeu"];
@@ -40,7 +41,7 @@ const ProjectsList = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.slice(0, visible).map((project) => (
-          <Link key={project.id} to={`/projects/${project.slug}`}>
+          <Link key={project.slug} to={`/projects/${project.slug}`}>
             <ProjectsCard {...project} />
           </Link>
         ))}

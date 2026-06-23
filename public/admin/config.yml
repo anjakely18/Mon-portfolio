@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: main
+
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: "projects"
+    label: "Projets"
+    files:
+      - name: "projects"
+        label: "Liste des projets"
+        file: "src/content/projects.json"
+        fields:
+          - name: projects
+            label: Projets
+            widget: list
+            fields:
+              - { name: slug,     label: "Slug (URL)",       widget: string }
+              - { name: title,    label: Titre,              widget: string }
+              - name: category
+                label: Catégorie
+                widget: select
+                options: ["Développement", "Design", "Jeu"]
+              - { name: role,     label: Rôle,               widget: string }
+              - { name: duration, label: Durée,              widget: string }
+              - { name: text,     label: Description courte, widget: text }
+              - { name: context,  label: Contexte,           widget: text }
+              - { name: approach, label: Approche,           widget: text }
+              - { name: result,   label: Résultat,           widget: text }
+              - { name: url,      label: URL du projet,      widget: string, required: false }
+              - { name: github,   label: URL GitHub,         widget: string, required: false }
+              - name: techs
+                label: Technologies
+                widget: list
+                field: { name: tech, label: Technologie, widget: string }
+              - name: gallery
+                label: Galerie
+                widget: list
+                field: { name: image, label: Image, widget: image }
+

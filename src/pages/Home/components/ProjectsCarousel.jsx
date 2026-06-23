@@ -1,7 +1,8 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { projects } from "@/assets/data";
+import projectsData from "@/content/projects.json";
+const projects = projectsData.projects;
 import ProjectsCard from "@/components/ProjectsCard";
 
 const ProjectsCarousel = () => {
@@ -38,7 +39,7 @@ const ProjectsCarousel = () => {
         <div className="flex -ml-4">
           {projects.map((project) => (
             <div
-              key={project.id}
+              key={project.slug}
               className="flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] pl-4"
             >
               <ProjectsCard {...project} />

@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import { FiExternalLink, FiGithub, FiArrowLeft, FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { projects } from "@/assets/data";
-import AnimatedSection from "@/components/AnimatedSection";
 import PageHero from "@/components/PageHero";
+import projectsData from "@/content/projects.json";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const Gallery = ({ images, title }) => {
   const [current, setCurrent] = useState(0);
@@ -67,6 +67,7 @@ Gallery.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
+const projects = projectsData.projects;
 const ProjectDetail = () => {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
