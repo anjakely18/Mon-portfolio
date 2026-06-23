@@ -2,11 +2,11 @@
   "projects": [
     {
       "github": "https://github.com/anjakely18/SITE-CUEJ",
-      "approach": "J’ai conçu et développé une architecture PHP avec base de données MySQL pour gérer dynamiquement les articles et médias. J’ai travaillé à la fois sur la partie back-end (gestion des données, logique serveur) et front-end (intégration, navigation), en veillant à ce que l’interface soit intuitive pour des utilisateurs non-techniciens.",
+      "approach": "Côté technique, j'ai travaillé avec du Twig et PHP en codant chaque type de bloc séparément — image-texte, texte seul, image, vidéo — pour que la structure soit réutilisable et que les journalistes puissent publier en autonomie par la suite. On s'organisait via Notion et on restait en contact constant avec les designers et le journalistes pour coller au plus près des maquettes.",
       "slug": "cuej-ruraux-2024",
       "text": "Ce projet est né d'une collaboration avec l'école de journalisme CUEJ, où des étudiants avaient besoin d'un espace pour publier leurs reportages sur la vie rurale. En équipe avec d'autres étudiants MMI, on a conçu et développé une plateforme sur mesure en PHP, JavaScript, CSS et HTML, avec une base de données MySQL.",
       "url": "https://www.cuej.info/mini-sites/ruraux2024/index.php?",
-      "context": "Un projet d'équipe au sens plein du terme — on a travaillé main dans la main avec les designers pour coller au plus près des maquettes et répondre aux attentes du client. Côté dev, je me suis occupée aussi bien du back-end que du front-end : construction des différents blocs de contenu et mise en place d'une structure suffisamment flexible pour que les journalistes puissent publier en autonomie.",
+      "context": "Un projet d'équipe au sens plein du terme, avec des designers, des développeurs, et un client à satisfaire. Il fallait jongler entre les maquettes Figma, les demandes, et une deadline serrée — un environnement proche du monde professionnel.",
       "gallery": [
         "/images/uploads/cuej-1.png",
         "/images/uploads/cuej-4.jpg",
@@ -23,6 +23,29 @@
         "CSS",
         "Github",
         "MySQL"
+      ],
+      "category": "Développement"
+    },
+    {
+      "approach": "J'ai commencé par une phase d'analyse approfondie du site existant avant de proposer des maquettes pour la nouvelle version. Une fois la direction validée avec les tuteurs du collectif — avec qui on se retrouvait régulièrement en réunion — j'ai procédé à la mise en place sur WordPress. Ces échanges réguliers m'ont permis de rester alignée avec leurs attentes tout en gardant une vraie marge d'autonomie.",
+      "slug": "tous-chercheurs-alsace",
+      "text": "Durant mon stage au sein du collectif Tous Chercheurs Alsace, j'ai pris en charge la refonte complète de leur site existant, développé à l'origine par d'anciens étudiants MMI. Seule développeuse de l'équipe, j'ai travaillé principalement avec WordPress et Elementor pour repenser la façon dont le collectif présente ses projets de recherche participative et ses offres d'immersion à destination de différents publics — lycéens, citoyens, et bien d'autres.",
+      "url": "https://touschercheursalsace.fr/",
+      "context": "Ce stage de deuxième année m'a placée dans une situation peu commune : reprendre un projet existant, comprendre ce qui avait été fait avant moi, et le faire évoluer. Sans équipe technique autour de moi, c'était à moi de cadrer le travail et de prendre les bonnes décisions.",
+      "gallery": [
+        "/images/uploads/tous-chercheurs1.png",
+        "/images/uploads/tous-chercheurs2.png",
+        "/images/uploads/tous-chercheurs3.png"
+      ],
+      "duration": "2 mois",
+      "role": "Développeuse front et back",
+      "title": "Tous Chercheurs Alsace",
+      "result": "Le site est aujourd'hui en ligne et actif. Le collectif était satisfait du travail rendu, et la base que j'ai posée a depuis été reprise et enrichie. C'est assez gratifiant de voir qu'un travail de stage a pu servir de fondation à quelque chose qui continue de vivre.",
+      "techs": [
+        "Wordpress",
+        "UX Design",
+        "UI Design",
+        "Figma"
       ],
       "category": "Développement"
     }
