@@ -4,9 +4,9 @@
       "github": "https://github.com/anjakely18/SITE-CUEJ",
       "approach": "J’ai conçu et développé une architecture PHP avec base de données MySQL pour gérer dynamiquement les articles et médias. J’ai travaillé à la fois sur la partie back-end (gestion des données, logique serveur) et front-end (intégration, navigation), en veillant à ce que l’interface soit intuitive pour des utilisateurs non-techniciens.",
       "slug": "cuej-ruraux-2024",
-      "text": "Ce projet est une collaboration entre l'école de journalisme CUEJ et des étudiants en deuxième année en BUT MMI. Il avait pour but de permettre  aux étudiants en journalisme de publier des reportages sur la vie rurale. Développé en PHP, Javascript, CSS et HTML avec une base de données MySQL pour gérer les articles et médias. J’ai principalement travaillé sur le développement back-end et front-end, assurant aux le développement des différents blocs ainsi que la structure dynamique du projet pour permettre facilement aux futurs journalistes d'insérer du contenu.",
+      "text": "Ce projet est né d'une collaboration avec l'école de journalisme CUEJ, où des étudiants avaient besoin d'un espace pour publier leurs reportages sur la vie rurale. En équipe avec d'autres étudiants MMI, on a conçu et développé une plateforme sur mesure en PHP, JavaScript, CSS et HTML, avec une base de données MySQL.",
       "url": "https://www.cuej.info/mini-sites/ruraux2024/index.php?",
-      "context": "Le Centre Universitaire d’Enseignement du Journalisme (CUEJ) avait besoin d’un mini-site dédié à sa couverture \\\"Ruraux 2024\\\", permettant à ses étudiants de publier et gérer leurs reportages en ligne dans un environnement qu’ils contrôlent entièrement.",
+      "context": "Un projet d'équipe au sens plein du terme — on a travaillé main dans la main avec les designers pour coller au plus près des maquettes et répondre aux attentes du client. Côté dev, je me suis occupée aussi bien du back-end que du front-end : construction des différents blocs de contenu et mise en place d'une structure suffisamment flexible pour que les journalistes puissent publier en autonomie.",
       "gallery": [
         "/images/uploads/cuej-1.png",
         "/images/uploads/cuej-4.jpg",
@@ -16,12 +16,13 @@
       "duration": "2 semaines",
       "role": "Développeuse front et back",
       "title": "Cœurs Déter' S'engager dans sa ruralité",
-      "result": "Un mini-site fonctionnel livré et utilisé par les étudiants du CUEJ pour publier leurs reportages. Ce projet m’a permis de consolider mes compétences full-stack et de travailler dans un contexte réel avec des contraintes éditoriales.\"",
+      "result": "C'était un projet ambitieux, avec ses imprévus, et ça nous a appris autant que les parties qui ont bien marché. Au final, on a livré un site globalement fonctionnel, avec un back-office opérationnel, et un rendu dont toute l'équipe peut être fière.",
       "techs": [
         "PHP",
         "Javascript",
         "CSS",
-        "Github"
+        "Github",
+        "MySQL"
       ],
       "category": "Développement"
     }
