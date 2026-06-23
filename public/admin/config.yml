@@ -147,3 +147,24 @@ collections:
             label: "Centres d'intérêt"
             widget: list
             field: { name: interet, label: "Centre d'intérêt", widget: string }
+
+  # ─── À propos (home) ────────────────────────────────────────────────────────
+  - name: "aboutInfo"
+    label: "À propos (accueil)"
+    files:
+      - name: "aboutInfo"
+        label: "Infos à propos"
+        file: "src/content/aboutInfo.json"
+        fields:
+          - { name: bio,          label: Bio,           widget: text }
+          - { name: localisation, label: Localisation,  widget: string }
+          - name: cards
+            label: Cartes
+            widget: list
+            fields:
+              - name: icon
+                label: Icône
+                widget: select
+                options: [briefcase, graduationCap, calendarCheck, checkDouble, lightbulb, search, users, campaign, code, react, figma, php]
+              - { name: title,       label: Titre,       widget: string }
+              - { name: description, label: Description, widget: text }

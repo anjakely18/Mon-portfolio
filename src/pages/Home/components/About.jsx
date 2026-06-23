@@ -1,5 +1,5 @@
 import SectionTitle from "@/components/SectionTitle";
-import { aboutInfo } from "@/assets/data";
+import aboutInfo from "@/content/aboutInfo.json";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -23,10 +23,10 @@ const About = () => {
           </Link>
         </AnimatedSection>
         <AnimatedSection delay={0.2} className="flex flex-col gap-4 md:w-1/2">
-          {aboutInfo.cards.map((card) => {
+          {aboutInfo.cards.map((card, i) => {
             const Icon = iconMap[card.icon];
             return (
-              <FeatureCard key={card.id} icon={<Icon className="text-2xl text-main" />} title={card.title} description={card.description} />
+              <FeatureCard key={i} icon={<Icon className="text-2xl text-main" />} title={card.title} description={card.description} />
             );
           })}
         </AnimatedSection>
