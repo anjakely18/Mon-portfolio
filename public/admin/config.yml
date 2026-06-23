@@ -116,3 +116,34 @@ collections:
               - { name: date,   label: Date,        widget: string }
               - { name: text,   label: Description, widget: text }
               - { name: img,    label: Image,       widget: image, required: false }
+
+  # ─── Profil ─────────────────────────────────────────────────────────────────
+  - name: "profilData"
+    label: "Profil"
+    files:
+      - name: "profilData"
+        label: "Données du profil"
+        file: "src/content/profilData.json"
+        fields:
+          - { name: histoire, label: "Mon histoire", widget: text }
+          - name: langues
+            label: Langues
+            widget: list
+            fields:
+              - { name: code,  label: "Code pays (ex: FR)", widget: string }
+              - { name: name,  label: Nom,                  widget: string }
+              - { name: level, label: Niveau,               widget: string }
+          - name: valeurs
+            label: Valeurs
+            widget: list
+            fields:
+              - name: icon
+                label: Icône
+                widget: select
+                options: [checkDouble, lightbulb, search, users, briefcase, graduationCap, calendarCheck, campaign, code, react, figma, php]
+              - { name: title,       label: Titre,       widget: string }
+              - { name: description, label: Description, widget: text }
+          - name: interets
+            label: "Centres d'intérêt"
+            widget: list
+            field: { name: interet, label: "Centre d'intérêt", widget: string }

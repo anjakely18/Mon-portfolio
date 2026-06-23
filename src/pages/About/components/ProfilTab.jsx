@@ -1,6 +1,6 @@
 import ReactCountryFlag from "react-country-flag";
 import FeatureCard from "@/components/FeatureCard";
-import { profilData } from "@/assets/data";
+import profilData from "@/content/profilData.json";
 import iconMap from "@/utils/iconMap";
 
 const ProfilTab = () => {
