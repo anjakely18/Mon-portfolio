@@ -7,6 +7,7 @@ media_folder: public/images/uploads
 public_folder: /images/uploads
 
 collections:
+  # ─── Projets ────────────────────────────────────────────────────────────
   - name: "projects"
     label: "Projets"
     files:
@@ -64,3 +65,54 @@ collections:
                 widget: list
                 field: { name: tech, label: Technologie, widget: string }
 
+  # ─── Formations ─────────────────────────────────────────────────────────────
+  - name: "formations"
+    label: "Formations"
+    files:
+      - name: "formations"
+        label: "Liste des formations"
+        file: "src/content/formations.json"
+        fields:
+          - name: formations
+            label: Formations
+            widget: list
+            fields:
+              - { name: date,         label: Période,       widget: string }
+              - { name: title,        label: Intitulé,      widget: string }
+              - { name: organisation, label: Établissement, widget: string }
+              - { name: description,  label: Description,   widget: text }
+
+  # ─── Expériences ────────────────────────────────────────────────────────────
+  - name: "experiences"
+    label: "Expériences"
+    files:
+      - name: "experiences"
+        label: "Liste des expériences"
+        file: "src/content/experiences.json"
+        fields:
+          - name: experiences
+            label: Expériences
+            widget: list
+            fields:
+              - { name: date,         label: Période,    widget: string }
+              - { name: title,        label: Poste,      widget: string }
+              - { name: organisation, label: Entreprise, widget: string }
+              - { name: description,  label: Description, widget: text }
+
+  # ─── Certifications ─────────────────────────────────────────────────────────
+  - name: "certifications"
+    label: "Certifications"
+    files:
+      - name: "certifications"
+        label: "Liste des certifications"
+        file: "src/content/certifications.json"
+        fields:
+          - name: certifications
+            label: Certifications
+            widget: list
+            fields:
+              - { name: title,  label: Titre,       widget: string }
+              - { name: issuer, label: Organisme,   widget: string }
+              - { name: date,   label: Date,        widget: string }
+              - { name: text,   label: Description, widget: text }
+              - { name: img,    label: Image,       widget: image, required: false }

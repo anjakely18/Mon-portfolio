@@ -4,7 +4,13 @@ import TimelineTab from "./components/TimelineTab";
 import CertificationsTab from "./components/CertificationsTab";
 import ProfilTab from "./components/ProfilTab";
 import AnimatedSection from "@/components/AnimatedSection";
-import { pageHeroes, formations, experiences, certifications } from "@/assets/data";
+import { pageHeroes } from "@/assets/data";
+import formationsData from "@/content/formations.json";
+import experiencesData from "@/content/experiences.json";
+import certificationsData from "@/content/certifications.json";
+const formations = formationsData.formations;
+const experiences = experiencesData.experiences;
+const certifications = certificationsData.certifications;
 
 const tabs = [
   { id: "formations",     label: "Formations",     content: <TimelineTab items={formations} />           },
