@@ -24,7 +24,7 @@ collections:
               - name: category
                 label: Catégorie
                 widget: select
-                options: ["Développement", "Design", "Jeu"]
+                options: ["Front-end", "Full-stack", "CMS", "Design / UX", "Jeu"]
               - { name: role,     label: Rôle,               widget: string }
               - { name: duration, label: Durée,              widget: string }
               - { name: text,     label: Description courte, widget: text }

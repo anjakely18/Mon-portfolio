@@ -24,7 +24,7 @@
         "Github",
         "MySQL"
       ],
-      "category": "Développement"
+      "category": "Full-stack"
     },
     {
       "approach": "J'ai commencé par une phase d'analyse approfondie du site existant avant de proposer des maquettes pour la nouvelle version. Une fois la direction validée avec les tuteurs du collectif — avec qui on se retrouvait régulièrement en réunion — j'ai procédé à la mise en place sur WordPress. Ces échanges réguliers m'ont permis de rester alignée avec leurs attentes tout en gardant une vraie marge d'autonomie.",
@@ -47,7 +47,7 @@
         "UI Design",
         "Figma"
       ],
-      "category": "Développement"
+      "category": "CMS"
     }
   ]
 }
