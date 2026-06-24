@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { links } from "../assets/data";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
@@ -19,9 +20,9 @@ const Footer = () => {
         {links.map((link) => {
           const { id, href, text } = link;
           return (
-            <a key={id} href={href} className="navlink hover:text-main">
+            <Link key={id} to={href} className="navlink hover:text-main">
               {text}
-            </a>
+            </Link>
           );
         })}
       </nav>

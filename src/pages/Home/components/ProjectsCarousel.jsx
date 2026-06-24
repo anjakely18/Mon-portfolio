@@ -35,7 +35,7 @@ const ProjectsCarousel = () => {
 
   return (
     <div className="relative">
-      <div className="overflow-hidden" ref={emblaRef}>
+      <div ref={emblaRef}>
         <div className="flex -ml-4">
           {projects.map((project) => (
             <div

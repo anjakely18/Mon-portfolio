@@ -1,4 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
+import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import maPhoto from "@/assets/me.png";
 import cv from "@/assets/cv.pdf";
@@ -51,9 +52,9 @@ const Hero = () => {
             <a href={cv} className="btn-primary" download>
               Télécharger mon CV
             </a>
-            <a href="#contact" className="btn-outline">
+            <Link to="/contact" className="btn-outline">
               Me contacter
-            </a>
+            </Link>
           </div>
         </AnimatedSection>
       </div>
