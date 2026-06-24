@@ -1,3 +1,22 @@
 {
-  "experiences": []
+  "experiences": [
+    {
+      "date": "2021-2025",
+      "title": "Equipière Polyvalente ",
+      "organisation": "Burger King, Strasbourg",
+      "description": "Pendant mes études, j'ai travaillé en parallèle chez Burger King en tant qu'équipière polyvalente. Au-delà du job en lui-même, c'est une expérience qui m'a vraiment appris à gérer la pression, à travailler en équipe et à rester efficace même dans les moments de rush."
+    },
+    {
+      "date": "2025",
+      "title": "Stage - Refonte de Site Web",
+      "organisation": "Tous Chercheur Alsace — Strasbourg",
+      "description": "Dans le cadre de ma deuxième année de BUT MMI, j'ai effectué un stage de deux mois au sein de Tous Chercheurs Alsace. Ma mission principale était de reprendre et d'améliorer le site existant — développé par d'anciens étudiants MMI — via WordPress et Elementor.\nJ'ai restructuré la navigation, créé des illustrations et accompagné le collectif tout au long du processus, en analysant leurs besoins et en les conseillant sur les choix UX. Une expérience enrichissante où j'ai autant joué le rôle de développeuse que de consultante, en m'adaptant à un client non technique"
+    },
+    {
+      "date": "2025 - 2026",
+      "title": "Développeuse web en alternance",
+      "organisation": "Ikko — Strasbourg",
+      "description": "Mon alternance chez Ikko, agence web strasbourgeoise, a été une expérience vraiment formatrice. Pendant un an, j'ai travaillé au sein d'une équipe de développeurs expérimentés, ce qui m'a permis de monter en compétences rapidement — aussi bien en front-end qu'en CMS.\nC'est là que j'ai vraiment ancré mes pratiques professionnelles : méthode Agile, Git Flow, travail en équipe, gestion de projets clients… Tout ce que j'avais vu en cours prenait enfin tout son sens dans un environnement réel."
+    }
+  ]
 }
