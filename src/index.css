@@ -6,6 +6,7 @@
   /* Couleurs */
   --color-main: #846A6A;
   --color-text: #353B3C;
+  --color-text-muted: #6B7280;
   --color-bg: #EEF0F2;
   --color-bg-second: #C6C7C4;
 
@@ -14,15 +15,15 @@
   --font-title: "Merriweather", serif;
   --font-body: "Lato", sans-serif;
 
-  --text-h1: 3rem;
+  --text-h1: clamp(1.8rem, 5vw, 3rem);
   --text-h1--font-weight: 700;
-  --text-h2: 2rem;
+  --text-h2: clamp(1.4rem, 3.5vw, 2rem);
   --text-h2--font-weight: 700;
-  --text-h3: 1.4rem;
-  --text-body: 1.2rem;
+  --text-h3: clamp(1.1rem, 2.5vw, 1.4rem);
+  --text-body: clamp(1rem, 2vw, 1.2rem);
   --text-caption: 0.875rem;
-  --text-caption--font-weight: 300;
-  --text-logo: 1.8rem;
+  --text-caption--font-weight: 400;
+  --text-logo: 1.6rem;
   --text-btn: 1rem;
   --text-nav: 1rem;
 
@@ -35,6 +36,7 @@
 html.dark {
   --color-main: #A2999E;
   --color-text: #EEF0F2;
+  --color-text-muted: #9CA3AF;
   --color-bg: #18181b;
   --color-bg-second: #27272a;
 }
