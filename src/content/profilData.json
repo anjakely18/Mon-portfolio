@@ -22,6 +22,33 @@
       "level": "C1 (courant)"
     }
   ],
-  "valeurs": [],
-  "interets": []
+  "valeurs": [
+    {
+      "title": "Créativité",
+      "icon": "checkDouble",
+      "description": "Chaque projet est pour moi une occasion de proposer quelque chose de visuellement fort et mémorable. Créer, c'est avant tout chercher — et ne jamais se satisfaire du premier jet."
+    },
+    {
+      "title": "Esprit d'équipe",
+      "icon": "users",
+      "description": "Tout au long de mes études et de mes expériences en entreprise, j'ai appris à collaborer avec des designers, des développeurs et des clients. Pour moi, un bon projet naît avant tout d'une communication fluide et d'une organisation solide entre les membres d'une équipe — c'est ce qui fait la différence entre un résultat correct et un résultat réussi."
+    },
+    {
+      "title": "Organisation",
+      "icon": "calendarCheck",
+      "description": "Que ce soit pour gérer un projet en équipe ou avancer seule sur une mission, l'organisation est au cœur de ma façon de travailler. Je structure mes tâches, je fixe mes priorités et j'utilise des outils adaptés pour rester efficace et livrer un travail de qualité."
+    },
+    {
+      "title": "Implication",
+      "icon": "lightbulb",
+      "description": "Étant quelqu'un de très impliquée, je ne fais jamais les choses à moitié. Face à un problème, je cherche toujours une solution, même quand c'est difficile. Le développement est un métier où l'on apprend chaque jour, et c'est précisément ce qui m'anime — progresser, persévérer, et ne jamais abandonner."
+    }
+  ],
+  "interets": [
+    "Musique",
+    "Jeu Vidéo",
+    "Cinema",
+    "Lecture",
+    "Voyages"
+  ]
 }
