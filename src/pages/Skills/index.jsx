@@ -1,6 +1,7 @@
 import PageHero from "@/components/PageHero";
 import AnimatedSection from "@/components/AnimatedSection";
 import SkillsAccordion from "./components/SkillsAccordion";
+import TechStack from "./components/TechStack";
 import { pageHeroes } from "@/assets/data";
 
 const Skills = () => {
@@ -8,8 +9,9 @@ const Skills = () => {
     <>
       <PageHero {...pageHeroes.skills} />
       <AnimatedSection>
-        <section className="container py-20 md:py-32">
+        <section className="container py-20 md:py-32 flex flex-col gap-24">
           <SkillsAccordion />
+          <TechStack />
         </section>
       </AnimatedSection>
     </>
