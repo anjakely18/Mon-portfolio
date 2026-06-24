@@ -48,6 +48,53 @@
         "Figma"
       ],
       "category": "CMS"
+    },
+    {
+      "github": "https://github.com/anjakely18/site-sobri-t-",
+      "approach": "J'ai pris en charge la direction artistique : conception des maquettes sur Figma avec des visuels épurés en cohérence avec la thématique, création d'illustrations et travail sur l'identité visuelle. Nous avons également intégré des graphiques basés sur des données sourcées — The Shift Project, ADEME, GreenIT — pour garantir une approche fiable et alignée avec les politiques publiques. Le tout en travaillant en équipe de façon organisée et collaborative.",
+      "slug": "sobriete-numerique",
+      "text": "Projet de sensibilisation aux enjeux environnementaux du numérique. J'ai pris en charge le design sur Figma, la création d'illustrations et l'optimisation de la mise en page dans une démarche d'écoconception web. L'équipe a intégré des infographies dynamiques avec Chart.js.",
+      "url": "https://rasamoelina.etu.mmi-unistra.fr/SAE303-site/",
+      "context": "Le numérique est un secteur particulièrement énergivore — réseaux, appareils du quotidien, data-centers, chacun contribue à une consommation énergétique croissante. Ce projet avait pour objectif de trouver des solutions concrètes pour limiter cet impact au sein de la communauté universitaire, en ciblant étudiants, professeurs et personnels de l'université.",
+      "gallery": [
+        "/images/uploads/sae.png",
+        "/images/uploads/sae-numerique-1.png",
+        "/images/uploads/sae-numerique-1.png"
+      ],
+      "duration": "2 Semaines",
+      "role": "Designer & intégratrice",
+      "title": "Site de sensibilisation à la sobriété numérique",
+      "result": "Un site cohérent dans sa forme et son fond, où le parti-pris éco-responsable se ressent visuellement. Ce projet m'a sensibilisée à l'impact des choix techniques et graphiques sur l'empreinte carbone d'un site web.",
+      "techs": [
+        "Chart.js",
+        "Figma",
+        "HTML",
+        "CSS",
+        "Javascript"
+      ],
+      "category": "Design / UX"
+    },
+    {
+      "github": "https://github.com/NoahBoos/mmi-sae402",
+      "approach": "J'ai pris en charge la conception de la scène principale (environnement de forêt médiévale), la modélisation des personnages joueur et ennemis sous Blender, et l'intégration des mécaniques de jeu : système de détection et poursuite des ennemis, gestion des collisions, transitions entre scènes, dialogues. J'ai également designé le menu d'accueil.\n",
+      "slug": "jeu-rpg-unity",
+      "text": "Développement d'un jeu RPG en 3D sur Unity, réalisé en équipe dans le cadre d'une SAE.",
+      "url": "https://drive.google.com/file/d/1AKEYh0BxoL6N8u_6LBE_Ulv4gR777-CE/view",
+      "context": "Le jeu était structuré en trois scènes distinctes, chacune prise en charge par un membre de l'équipe. J'étais responsable de la scène de forêt médiévale dans son intégralité — de la conception visuelle à l'implémentation technique.",
+      "gallery": [
+        "/images/uploads/unity.png",
+        "/images/uploads/unity1.png"
+      ],
+      "duration": "2 semaines",
+      "role": "Game designer & développeuse 3D",
+      "title": "Développement d'un jeu RPG sur Unity",
+      "result": "Un prototype de jeu RPG jouable, avec une boucle de gameplay fonctionnelle et un univers visuel cohérent. Ce projet m'a ouvert à la logique du développement interactif et m'a permis d'appliquer de la 3D dans un contexte de production réel.",
+      "techs": [
+        "Unity",
+        "C#",
+        "Blender"
+      ],
+      "category": "Jeu"
     }
   ]
 }
