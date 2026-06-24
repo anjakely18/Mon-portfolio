@@ -1,6 +1,27 @@
 {
-  "histoire": "",
-  "langues": [],
+  "histoire": "Moi, c'est Anja. Depuis le lycée, j'ai toujours été attirée par l'informatique — les algorithmes, la logique, les maths. C'est naturellement que j'ai choisi de poursuivre en Licence de Mathématiques et Informatique. Mais au fil du temps, j'ai réalisé que quelque chose me manquait : cette voie ne me correspondait pas vraiment.\nAprès réflexion, j'ai compris ce qui me passionnait vraiment : la programmation, oui, mais combinée à l'art et au design. J'ai donc pris la décision, après ma deuxième année de licence, de me réorienter en développement web à l'IUT d'Haguenau, dans la filière MMI (Métiers du Multimédia et de l'Internet).\nCe choix a été l'un des meilleurs que j'aie faits. Il m'a permis de décrocher un stage puis une alternance, tout en développant un profil polyvalent qui mêle communication digitale, création numérique et développement web. Aujourd'hui, j'arrive à ma dernière année d'études — et j'en suis fière.",
+  "langues": [
+    {
+      "code": "FR",
+      "name": "Français",
+      "level": "C1 (courant)"
+    },
+    {
+      "code": "US",
+      "name": "Anglais",
+      "level": "C1 (Courant)"
+    },
+    {
+      "code": "ES",
+      "name": "Espagnol",
+      "level": "B1 (intermédiaire)"
+    },
+    {
+      "code": "MG",
+      "name": "Malgache",
+      "level": "C1 (courant)"
+    }
+  ],
   "valeurs": [],
   "interets": []
 }
