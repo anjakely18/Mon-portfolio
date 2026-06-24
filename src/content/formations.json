@@ -1,3 +1,22 @@
 {
-  "formations": []
+  "formations": [
+    {
+      "date": "2019",
+      "title": "Baccalauréat Scientifique",
+      "organisation": "Lycée CHILDHOOD, Madagascar",
+      "description": "Originaire de Madagascar, j'ai suivi ma scolarité au lycée Childhood où j'ai choisi la filière Scientifique, spécialité Mathématiques. Un choix naturel pour moi, qui ai toujours eu un attrait pour la logique, le calcul et les sciences. J'ai obtenu mon baccalauréat avec mention."
+    },
+    {
+      "date": "2021 - 2023",
+      "title": "Licence Mathématiques Informatique",
+      "organisation": "Université de Strasbourg",
+      "description": "Mon bac en poche, j'ai fait le choix de poursuivre mes études en France, en m'inscrivant en Licence de Mathématiques et Informatique. Une expérience de deux ans qui a renforcé mes bases en algorithmie et en logique, avant de me réorienter vers ce qui me correspondait vraiment."
+    },
+    {
+      "date": "2024 - 2026",
+      "title": "BUT MMI ",
+      "organisation": "IUT Haguenau",
+      "description": "Forts de mes deux années en licence, j'ai intégré le BUT MMI (Métiers du Multimédia et de l'Internet) à l'IUT d'Haguenau directement en deuxième année. Cette réorientation m'a permis de combiner mes bases techniques avec le design et la communication digitale, et de construire un profil de développeuse web polyvalente."
+    }
+  ]
 }
