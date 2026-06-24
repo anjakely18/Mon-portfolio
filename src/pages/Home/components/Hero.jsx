@@ -8,7 +8,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col-reverse md:flex-row container items-center justify-between gap-8 md:gap-16">
+    <section className="relative min-h-screen flex flex-col-reverse md:flex-row container items-center justify-center md:justify-between gap-8 md:gap-16">
       <ParticlesWrapper className="absolute inset-0 z-0" />
       <div className="relative z-10 flex flex-col items-start max-w-lg">
         <AnimatedSection delay={0}>
@@ -59,7 +59,7 @@ const Hero = () => {
         </AnimatedSection>
       </div>
       <AnimatedSection delay={0.3}>
-        <div className="relative z-10 w-70 h-70 top-12 md:w-90 md:h-90 rounded-full overflow-hidden shrink-0 cursor-pointer shadow-glow-lg hover:shadow-glow-xl transition-all duration-300">
+        <div className="relative z-10 w-70 h-70 md:top-12 md:w-90 md:h-90 rounded-full overflow-hidden shrink-0 cursor-pointer shadow-glow-lg hover:shadow-glow-xl transition-all duration-300">
           <img src={maPhoto} alt="ma photo" className="w-full h-full object-cover object-center" />
         </div>
       </AnimatedSection>
