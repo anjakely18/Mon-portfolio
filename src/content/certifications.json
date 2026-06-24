@@ -1,3 +1,25 @@
 {
-  "certifications": []
+  "certifications": [
+    {
+      "title": "Certification PIX — Compétences numériques",
+      "issuer": "PIX",
+      "date": "2026",
+      "text": "Certification nationale évaluant les compétences numériques sur 5 domaines : information et données, communication et collaboration, création de contenu numérique, protection et sécurité, et environnement numérique. Obtenue avec le niveau Avancé 1, attestant de pratiques numériques solides et d'une capacité à faire face de manière autonome à des situations nouvelles.",
+      "img": "/images/uploads/pix-certif.png"
+    },
+    {
+      "title": "Certification OPQuast — Maîtrise de la qualité web",
+      "issuer": "OPQuast",
+      "date": "2026 - 2029",
+      "text": "Certification de référence dans le domaine de la qualité web, couvrant les bonnes pratiques en matière d'accessibilité, de performance, de SEO et d'expérience utilisateur. Obtenue avec un score de 616 points, attestant d'une bonne maîtrise des standards et règles qui font un site web de qualité.",
+      "img": "/images/uploads/opquast-certif.png"
+    },
+    {
+      "title": "Legacy JavaScript Algorithms and Data Structures",
+      "issuer": "freeCodeCamp",
+      "date": "2024",
+      "text": "Certification développeur couvrant les algorithmes et structures de données en JavaScript — représentant environ 300 heures de travail. Une formation qui m'a permis de renforcer mes bases en logique algorithmique et en JavaScript vanilla.",
+      "img": "/images/uploads/freecodecamp-certif1.png"
+    }
+  ]
 }
