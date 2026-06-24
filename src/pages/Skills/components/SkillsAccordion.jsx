@@ -5,6 +5,7 @@ import skillsData from "@/content/skills.json";
 const skills = skillsData.skills;
 import SkillDetail from "./SkillDetail";
 import iconMap from "@/utils/iconMap";
+import SectionTitle from "@/components/SectionTitle";
 
 const SkillsAccordion = () => {
   const [activeId, setActiveId] = useState(skills[0]?.title || null);
@@ -15,6 +16,7 @@ const SkillsAccordion = () => {
 
   return (
     <div className="flex flex-col gap-25">
+      <SectionTitle title="Mes domaines" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {skills.map((skill) => {
           const Icon = iconMap[skill.icon];
