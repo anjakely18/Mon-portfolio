@@ -16,7 +16,7 @@ const Footer = () => {
           <FaGithub className="" />
         </a>
       </div>
-      <nav className="text-nav flex justify-center items-center gap-6 mb-6">
+      <nav className="text-nav flex flex-col md:flex-row justify-center items-center gap-3 md:gap-6 mb-6">
         {links.map((link) => {
           const { id, href, text } = link;
           return (
