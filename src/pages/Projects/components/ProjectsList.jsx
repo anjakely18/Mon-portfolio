@@ -3,7 +3,7 @@ import projectsData from "@/content/projects.json";
 const projects = projectsData.projects;
 import ProjectsCard from "@/components/ProjectsCard";
 
-const CATEGORIES = ["Tous", "Développement", "Design", "Jeu"];
+const CATEGORIES = ["Tous", "Front-end", "Full-stack", "CMS", "Design / UX", "Jeu"];
 const PAGE_SIZE = 9;
 
 const ProjectsList = () => {
