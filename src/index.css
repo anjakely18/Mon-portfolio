@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where(html.dark, html.dark *));
 
 @theme {
   /* Couleurs */
@@ -32,11 +32,11 @@
   --shadow-glow-xl: 0 0 100px var(--color-main);
 }
 
-.dark {
+html.dark {
   --color-main: #A2999E;
   --color-text: #EEF0F2;
-  --color-bg: #353B3C;
-  --color-bg-second: #2a2f30;
+  --color-bg: #18181b;
+  --color-bg-second: #27272a;
 }
 
 

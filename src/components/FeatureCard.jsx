@@ -16,7 +16,7 @@ const FeatureCard = ({ icon, title, description, onClick, isActive }) => {
     >
       {icon}
       <h4 className="font-bold font-title">{title}</h4>
-      {description && <p className="text-caption text-[--color-text]/60">{description}</p>}
+      {description && <p className="text-caption text-(--color-text)/60">{description}</p>}
     </Tag>
   );
 };

@@ -9,7 +9,7 @@ const SkillDetail = ({ skill }) => {
       <Icon className="text-2xl text-main" />
       <h3 className="font-bold font-title text-h3">{skill.title}</h3>
     </div>
-    <p className="text-body text-[--color-text]/70">{skill.text}</p>
+    <p className="text-body text-(--color-text)/70">{skill.text}</p>
     <div className="flex flex-wrap gap-2">
       {skill.techs.map((tech, i) => (
         <span key={i} className="px-3 py-1 rounded-full border border-main/30 text-caption text-main">

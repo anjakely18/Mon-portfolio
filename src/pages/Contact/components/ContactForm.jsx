@@ -44,35 +44,35 @@ const ContactForm = () => {
     <form ref={formRef} onSubmit={handleSubmit} noValidate className="flex flex-col gap-5">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="text-caption font-bold text-[--color-text]/70">Nom</label>
+          <label htmlFor="name" className="text-caption font-bold text-(--color-text)/70">Nom</label>
           <input
             id="name"
             name="name"
             type="text"
             placeholder="Votre nom"
-            className="bg-bg-second rounded-xl px-4 py-3 text-body outline-none border border-main/30 focus:border-main transition-colors duration-300 placeholder:text-[--color-text]/30"
+            className="bg-bg-second rounded-xl px-4 py-3 text-body outline-none border border-main/30 focus:border-main transition-colors duration-300 placeholder:text-(--color-text)/30"
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="email" className="text-caption font-bold text-[--color-text]/70">Email</label>
+          <label htmlFor="email" className="text-caption font-bold text-(--color-text)/70">Email</label>
           <input
             id="email"
             name="email"
             type="email"
             placeholder="votre@email.com"
-            className="bg-bg-second rounded-xl px-4 py-3 text-body outline-none border border-main/30 focus:border-main transition-colors duration-300 placeholder:text-[--color-text]/30"
+            className="bg-bg-second rounded-xl px-4 py-3 text-body outline-none border border-main/30 focus:border-main transition-colors duration-300 placeholder:text-(--color-text)/30"
           />
         </div>
       </div>
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="message" className="text-caption font-bold text-[--color-text]/70">Message</label>
+        <label htmlFor="message" className="text-caption font-bold text-(--color-text)/70">Message</label>
         <textarea
           id="message"
           name="message"
           rows={6}
           placeholder="Votre message..."
-          className="bg-bg-second rounded-xl px-4 py-3 text-body outline-none border border-main/30 focus:border-main transition-colors duration-300 placeholder:text-[--color-text]/30 resize-none"
+          className="bg-bg-second rounded-xl px-4 py-3 text-body outline-none border border-main/30 focus:border-main transition-colors duration-300 placeholder:text-(--color-text)/30 resize-none"
         />
       </div>
 
