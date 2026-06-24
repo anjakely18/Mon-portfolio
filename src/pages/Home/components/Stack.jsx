@@ -27,7 +27,7 @@ export default function Stack() {
         {[...items, ...items].map((item, i) => (
           <div key={i} className="flex items-center gap-2 px-8">
             <span className="text-main text-nav">✦</span>
-            <span className="text-white text-nav font-light whitespace-nowrap font-body">
+            <span className="text-[--color-text] text-nav font-light whitespace-nowrap font-body">
               {item}
             </span>
           </div>

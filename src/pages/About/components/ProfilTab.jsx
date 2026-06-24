@@ -12,7 +12,7 @@ const ProfilTab = () => {
       {/* Histoire */}
       <div className="md:col-span-2 bg-bg-second rounded-2xl p-8 flex flex-col gap-4">
         <span className="text-caption text-main font-bold uppercase tracking-widest">Mon histoire</span>
-        <p className="text-body text-white/80 leading-relaxed">{histoire}</p>
+        <p className="text-body text-[--color-text]/80 leading-relaxed">{histoire}</p>
       </div>
 
       {/* Langues — regroupées */}
@@ -23,7 +23,7 @@ const ProfilTab = () => {
             <ReactCountryFlag countryCode={langue.code} svg style={{ width: "2rem", height: "2rem", borderRadius: "50%" }} />
             <div>
               <p className="font-bold font-title">{langue.name}</p>
-              <p className="text-caption text-white/50">{langue.level}</p>
+              <p className="text-caption text-[--color-text]/50">{langue.level}</p>
             </div>
           </div>
         ))}

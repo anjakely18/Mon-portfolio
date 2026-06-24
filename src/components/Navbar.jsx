@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="backdrop-blur-md fixed top-0 left-0 w-100 flex bg-bg-second/90 text-white items-center justify-between px-8 py-4 z-50 w-full">
+    <header className="backdrop-blur-md fixed top-0 left-0 w-100 flex bg-bg-second/90 text-[--color-text] items-center justify-between px-8 py-4 z-50 w-full">
       <NavLink to={"/"}>
         <h2 className="font-title text-logo">
           Anja <span className="text-main">Rasamoelina</span>

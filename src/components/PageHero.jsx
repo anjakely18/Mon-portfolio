@@ -10,7 +10,7 @@ const PageHero = ({ title, subtitle }) => {
         <h1 className="text-h1 font-title">{title}</h1>
       </AnimatedSection>
       <AnimatedSection delay={0.2} className="relative z-10">
-        <p className="text-body mt-4 text-white/70">{subtitle}</p>
+        <p className="text-body mt-4 text-[--color-text]/70">{subtitle}</p>
       </AnimatedSection>
     </section>
   );

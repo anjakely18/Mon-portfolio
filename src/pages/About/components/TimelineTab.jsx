@@ -10,10 +10,10 @@ const TimelineTab = ({ items }) => {
           <span className="text-caption text-main font-bold">{item.date}</span>
           <h3 className="text-h3 font-title mt-1">{item.title}</h3>
           {item.organisation && (
-            <p className="text-caption text-white/50 mt-0.5">{item.organisation}</p>
+            <p className="text-caption text-[--color-text]/50 mt-0.5">{item.organisation}</p>
           )}
           {item.description && (
-            <p className="text-body mt-3 text-white/70">{item.description}</p>
+            <p className="text-body mt-3 text-[--color-text]/70">{item.description}</p>
           )}
         </div>
       ))}

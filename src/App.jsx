@@ -9,7 +9,7 @@ import ProjectDetail from "./pages/Projects/components/ProjectDetail";
 import Skills from "./pages/Skills";
 const App = () => {
   return (
-    <main className="bg-bg text-white font-body">
+    <main className="bg-bg text-[--color-text] font-body">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

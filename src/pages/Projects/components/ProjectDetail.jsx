@@ -25,21 +25,21 @@ const Gallery = ({ images, title }) => {
         {/* Flèches */}
         <button
           onClick={prev}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-bg/70 hover:bg-bg border border-white/10 rounded-full p-3 transition-all duration-200 hover:border-main cursor-pointer"
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-bg/70 hover:bg-bg border border-[--color-text]/10 rounded-full p-3 transition-all duration-200 hover:border-main cursor-pointer"
           aria-label="Image précédente"
         >
           <FiChevronLeft className="text-xl" />
         </button>
         <button
           onClick={next}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-bg/70 hover:bg-bg border border-white/10 rounded-full p-3 transition-all duration-200 hover:border-main cursor-pointer"
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-bg/70 hover:bg-bg border border-[--color-text]/10 rounded-full p-3 transition-all duration-200 hover:border-main cursor-pointer"
           aria-label="Image suivante"
         >
           <FiChevronRight className="text-xl" />
         </button>
 
         {/* Compteur */}
-        <span className="absolute bottom-4 right-4 bg-bg/80 text-caption px-3 py-1 rounded-full text-white/70">
+        <span className="absolute bottom-4 right-4 bg-bg/80 text-caption px-3 py-1 rounded-full text-[--color-text]/70">
           {current + 1} / {images.length}
         </span>
       </div>
@@ -85,7 +85,7 @@ const ProjectDetail = () => {
         {/* Lien retour */}
         <Link
           to="/projects"
-          className="flex items-center gap-2 text-caption text-white/50 hover:text-white transition-colors w-fit"
+          className="flex items-center gap-2 text-caption text-[--color-text]/50 hover:text-[--color-text] transition-colors w-fit"
         >
           <FiArrowLeft />
           Retour aux projets
@@ -102,15 +102,15 @@ const ProjectDetail = () => {
         <AnimatedSection>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-bg-second rounded-2xl p-6 flex flex-col gap-1">
-              <span className="text-caption text-white/40 uppercase tracking-widest">Rôle</span>
+              <span className="text-caption text-[--color-text]/40 uppercase tracking-widest">Rôle</span>
               <span className="font-bold font-title">{role}</span>
             </div>
             <div className="bg-bg-second rounded-2xl p-6 flex flex-col gap-1">
-              <span className="text-caption text-white/40 uppercase tracking-widest">Durée</span>
+              <span className="text-caption text-[--color-text]/40 uppercase tracking-widest">Durée</span>
               <span className="font-bold font-title">{duration}</span>
             </div>
             <div className="bg-bg-second rounded-2xl p-6 flex flex-col gap-2 col-span-2">
-              <span className="text-caption text-white/40 uppercase tracking-widest">Stack</span>
+              <span className="text-caption text-[--color-text]/40 uppercase tracking-widest">Stack</span>
               <div className="flex flex-wrap gap-2">
                 {techs.map((tech) => (
                   <span
@@ -148,17 +148,17 @@ const ProjectDetail = () => {
           <AnimatedSection className="flex flex-col gap-4">
             <h2 className="text-h2 font-title">Contexte</h2>
             <div className="w-25 h-1 bg-main" />
-            <p className="text-body text-white/70 max-w-2xl">{context}</p>
+            <p className="text-body text-[--color-text]/70 max-w-2xl">{context}</p>
           </AnimatedSection>
           <AnimatedSection className="flex flex-col gap-4">
             <h2 className="text-h2 font-title">Démarche</h2>
             <div className="w-25 h-1 bg-main" />
-            <p className="text-body text-white/70 max-w-2xl">{approach}</p>
+            <p className="text-body text-[--color-text]/70 max-w-2xl">{approach}</p>
           </AnimatedSection>
           <AnimatedSection className="flex flex-col gap-4">
             <h2 className="text-h2 font-title">Résultat</h2>
             <div className="w-25 h-1 bg-main" />
-            <p className="text-body text-white/70 max-w-2xl">{result}</p>
+            <p className="text-body text-[--color-text]/70 max-w-2xl">{result}</p>
           </AnimatedSection>
         </div>
 

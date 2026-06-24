@@ -15,7 +15,7 @@ const Tabs = ({ tabs }) => {
             className={`px-6 py-2 rounded-xl font-bold text-btn transition-all duration-300 cursor-pointer ${
               active === tab.id
                 ? "bg-main text-bg shadow-glow"
-                : "text-white/60 hover:text-white"
+                : "text-[--color-text]/60 hover:text-[--color-text]"
             }`}
           >
             {tab.label}

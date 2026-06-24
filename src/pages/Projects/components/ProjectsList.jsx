@@ -30,7 +30,7 @@ const ProjectsList = () => {
             className={`px-4 py-2 rounded-full text-caption font-bold border transition-all duration-300 ${
               activeCategory === cat
                 ? "border-main text-main"
-                : "border-white/20 text-white/50 hover:border-white/50 hover:text-white/80"
+                : "border-[--color-text]/20 text-[--color-text]/50 hover:border-[--color-text]/50 hover:text-[--color-text]/80"
             }`}
           >
             {cat}
