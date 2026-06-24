@@ -102,15 +102,15 @@ const ProjectDetail = () => {
         <AnimatedSection>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-bg-second rounded-2xl p-6 flex flex-col gap-1">
-              <span className="text-caption text-(--color-text)/40 uppercase tracking-widest">Rôle</span>
+              <span className="text-caption text-(--color-text-muted) uppercase tracking-widest">Rôle</span>
               <span className="font-bold font-title">{role}</span>
             </div>
             <div className="bg-bg-second rounded-2xl p-6 flex flex-col gap-1">
-              <span className="text-caption text-(--color-text)/40 uppercase tracking-widest">Durée</span>
+              <span className="text-caption text-(--color-text-muted) uppercase tracking-widest">Durée</span>
               <span className="font-bold font-title">{duration}</span>
             </div>
             <div className="bg-bg-second rounded-2xl p-6 flex flex-col gap-2 col-span-2">
-              <span className="text-caption text-(--color-text)/40 uppercase tracking-widest">Stack</span>
+              <span className="text-caption text-(--color-text-muted) uppercase tracking-widest">Stack</span>
               <div className="flex flex-wrap gap-2">
                 {techs.map((tech) => (
                   <span
