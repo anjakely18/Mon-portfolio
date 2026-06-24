@@ -54,12 +54,13 @@ collections:
             label: Compétences
             widget: list
             fields:
-              - { name: title, label: Titre, widget: string }
+              - { name: title,   label: Titre,              widget: string }
               - name: icon
                 label: Icône
                 widget: select
                 options: [code, react, figma, php, checkDouble, lightbulb, search, users, briefcase, graduationCap, calendarCheck, campaign]
-              - { name: text, label: Description, widget: text }
+              - { name: summary, label: Résumé (1 phrase),  widget: string }
+              - { name: text,    label: Description,        widget: text }
               - name: techs
                 label: Technologies
                 widget: list
