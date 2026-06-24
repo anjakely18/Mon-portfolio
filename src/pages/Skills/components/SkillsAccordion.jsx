@@ -7,11 +7,11 @@ import SkillDetail from "./SkillDetail";
 import iconMap from "@/utils/iconMap";
 
 const SkillsAccordion = () => {
-  const [activeId, setActiveId] = useState(skills[0]?.id || null);
+  const [activeId, setActiveId] = useState(skills[0]?.title || null);
 
   const toggle = (id) => setActiveId((prev) => (prev === id ? null : id));
 
-  const activeSkill = skills.find((s) => s.id === activeId);
+  const activeSkill = skills.find((s) => s.title === activeId);
 
   return (
     <div className="flex flex-col gap-25">
@@ -19,14 +19,14 @@ const SkillsAccordion = () => {
         {skills.map((skill) => {
           const Icon = iconMap[skill.icon];
           return (
-          <React.Fragment key={skill.id}>
+          <React.Fragment key={skill.title}>
             <FeatureCard
               icon={<Icon className="text-2xl text-main" />}
               title={skill.title}
-              onClick={() => toggle(skill.id)}
-              isActive={activeId === skill.id}
+              onClick={() => toggle(skill.title)}
+              isActive={activeId === skill.title}
             />
-            {skill.id === activeId && (
+            {skill.title === activeId && (
               <div className="col-span-full md:hidden py-2">
                 <SkillDetail skill={skill} />
               </div>
@@ -39,7 +39,7 @@ const SkillsAccordion = () => {
       <AnimatePresence mode="wait">
         {activeSkill && (
           <motion.div
-            key={activeSkill.id}
+            key={activeSkill.title}
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 16 }}
