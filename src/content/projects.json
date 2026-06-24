@@ -95,6 +95,27 @@
         "Blender"
       ],
       "category": "Jeu"
+    },
+    {
+      "approach": "J'ai participé à l'analyse des objectifs, des valeurs et des cibles de l'association, ainsi qu'à la construction du plan d'action — en définissant les priorités de diffusion et les supports adaptés. J'ai également réalisé des maquettes pour proposer une nouvelle interface pensée pour les utilisateurs, et effectué une analyse SEO pour optimiser la visibilité du site.",
+      "slug": "identite-visuelle-sig",
+      "text": "Projet réalisé pour la SIG Association. Avec le groupe, nous avons conçu un prototype Figma complet proposant une refonte du logo, des éléments graphiques ainsi qu'une gamme de goodies (t-shirts, affiches, stickers, etc.).\n",
+      "url": "https://canva.link/6tvwc2au635rf8a",
+      "context": "Dans le cadre de cette SAE, nous avons travaillé pour un client réel : l’association\nde basket féminin SIG Association. Le projet consistait à concevoir une stratégie de\ncommunication complète, déclinée sur plusieurs supports. L'association souhaitait moderniser son image de marque pour renforcer sa présence auprès de ses supporters et partenaires. L'identité visuelle existante manquait de cohérence et ne reflétait pas le dynamisme du club.",
+      "gallery": [
+        "/images/uploads/sig.png",
+        "/images/uploads/sig-2.png"
+      ],
+      "duration": "3 semaines",
+      "role": "Designer graphique & UI",
+      "title": "Identité visuelle et Goodies pour la SIG",
+      "result": "Ce projet, réalisé en début d’année, a été particulièrement formateur : il m’a permis\nde découvrir la dynamique d’un projet réel, de développer des compétences\ntransversales, et d’appliquer des savoirs vus en cours dans un cadre concret et\nprofessionnalisant.",
+      "techs": [
+        "figma",
+        "Adobe Illustrator",
+        "Adobe Photoshop"
+      ],
+      "category": "Design / UX"
     }
   ]
 }
