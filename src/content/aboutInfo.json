@@ -1,5 +1,21 @@
 {
-  "bio": "",
-  "localisation": "",
-  "cards": []
+  "bio": "Bonjour, je m'appelle Anja. Je suis en dernière année de BUT MMI (Métiers du Multimédia et de l'Internet) et alternante chez Ikko à Strasbourg en tant que développeuse front-end. La programmation, le design, les interfaces — c'est mon terrain de jeu depuis quelques années maintenant, et j'en suis encore loin de me lasser.",
+  "localisation": "Strasbourg, France",
+  "cards": [
+    {
+      "icon": "briefcase",
+      "title": "Alternante",
+      "description": "Apprentissage en entreprise chez Ikko depuis Septembre 2025."
+    },
+    {
+      "icon": "graduationCap",
+      "title": "Etudiante en BUT MMI",
+      "description": "Dernière année en Métiers du Multimédia et de l'Internet."
+    },
+    {
+      "icon": "calendarCheck",
+      "title": "Disponibilité",
+      "description": "En recherche d'opportunités."
+    }
+  ]
 }
