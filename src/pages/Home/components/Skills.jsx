@@ -11,7 +11,7 @@ import iconMap from "@/utils/iconMap";
 const Skills = () => {
   return (
     <section className="container py-20 md:py-32">
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <SectionTitle className="main text-h2 font-title" title="Mes compétences" />
         <Link to="/skills" className="btn-ghost">En savoir plus <FaArrowRight className="inline-block ml-2" /></Link>
       </div>
