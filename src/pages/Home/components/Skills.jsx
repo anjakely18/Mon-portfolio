@@ -19,8 +19,8 @@ const Skills = () => {
         {skills.map((skill, index) => {
           const Icon = iconMap[skill.icon];
           return (
-            <AnimatedSection key={skill.id} delay={index * 0.1}>
-              <FeatureCard icon={<Icon className="text-2xl text-main" />} title={skill.title} description={skill.text} />
+            <AnimatedSection key={skill.title} delay={index * 0.1}>
+              <FeatureCard icon={<Icon className="text-2xl text-main" />} title={skill.title} />
             </AnimatedSection>
           );
         })}
