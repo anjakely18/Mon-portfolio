@@ -17,7 +17,7 @@ const Navbar = () => {
     <header className="backdrop-blur-md fixed top-0 left-0 flex bg-bg-second/90 text-(--color-text) items-center justify-between px-8 py-4 z-50 w-full">
       {/* Logo */}
       <NavLink to={"/"}>
-        <h2 className="font-title text-logo">
+        <h2 className="font-title text-base md:text-logo">
           Anja <span className="text-main">Rasamoelina</span>
         </h2>
       </NavLink>
