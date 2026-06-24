@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Couleurs */
-  --color-main: #ae90e9;
-  --color-bg: #212135;
-  --color-bg-second: #13131f;
+  --color-main: #846A6A;
+  --color-text: #353B3C;
+  --color-bg: #EEF0F2;
+  --color-bg-second: #C6C7C4;
+
 
   /* Typographie */
   --font-title: "Merriweather", serif;
@@ -28,6 +32,14 @@
   --shadow-glow-xl: 0 0 100px var(--color-main);
 }
 
+.dark {
+  --color-main: #A2999E;
+  --color-text: #EEF0F2;
+  --color-bg: #353B3C;
+  --color-bg-second: #2a2f30;
+}
+
+
 @utility container {
   max-width: 1200px;
   margin-inline: auto;
@@ -36,7 +48,7 @@
 
 @utility btn-primary {
   background-color: var(--color-main);
-  color: #000;
+  color: var(--color-bg);
   padding: 0.4rem 1.2rem;
   text-align: center;
   border-radius: 9999px;
