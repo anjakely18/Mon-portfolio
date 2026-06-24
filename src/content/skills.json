@@ -1,3 +1,71 @@
 {
-  "skills": []
+  "skills": [
+    {
+      "title": "CMS",
+      "icon": "code",
+      "text": "En stage et en alternance, j'ai travaillé régulièrement avec WordPress, Shopify et Drupal — aussi bien pour des sites vitrines que des boutiques e-commerce. L'objectif est toujours le même : livrer une solution où le client peut gérer son contenu en toute autonomie, sans avoir à toucher au code. Personnalisation de thèmes, gestion de catalogues produits, adaptation de l'interface selon les attentes du client… j'interviens principalement côté front, tout en sachant mettre les mains dans le back quand le projet le demande.",
+      "techs": [
+        "Wordpress",
+        "Shopify",
+        "Drupal"
+      ]
+    },
+    {
+      "title": "Développement Front",
+      "icon": "react",
+      "text": "C'est là où je me sens le plus à l'aise. Je crée des interfaces dynamiques et responsives en m'appuyant sur HTML5, CSS3 et JavaScript — avec une bonne maîtrise de React pour le développement de composants, la gestion d'état et le routing.\nPour le style, je m'adapte selon les projets : Tailwind CSS, Sass ou Bootstrap. Et selon l'environnement, je travaille aussi avec des moteurs de templates comme Twig ou Liquid pour l'intégration côté CMS. L'essentiel pour moi c'est que le rendu soit propre, cohérent et fidèle à la maquette, tout en respectant les bonnes pratiques d'accessibilité et de performance.",
+      "techs": [
+        "React",
+        "Tailwind",
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "Twig",
+        "Liquid"
+      ]
+    },
+    {
+      "title": "Développement Back",
+      "icon": "php",
+      "text": "Ayant un parcours en informatique avant le MMI, le back-end est quelque chose qui me parle naturellement. J'ai une bonne maîtrise de PHP et de Symfony, avec lesquels j'ai travaillé sur plusieurs projets — que ce soit pour la gestion de bases de données, la création d'APIs ou la mise en place de logiques métier.\nJ'ai également des bases en Laravel, découvert en cours, et je suis à l'aise avec MySQL pour la gestion et la modélisation des données.",
+      "techs": [
+        "PHP",
+        "Symfony",
+        "Laravel",
+        "SQL"
+      ]
+    },
+    {
+      "title": "UI/UX Design & Prototypage",
+      "icon": "figma",
+      "text": "Avant de penser au code, je pense à l'utilisateur. Comprendre un sujet, analyser les besoins, identifier les cibles — c'est une étape que je prends au sérieux, parce que c'est ce qui fait la différence entre une interface jolie et une interface qui fonctionne vraiment.\nCôté UX, j'ai appris à mener des enquêtes utilisateurs, construire des parcours et traduire des besoins concrets en solutions pensées pour les bonnes personnes. Côté UI, je conçois des maquettes soignées sur Figma — un outil que je maîtrise vraiment, au-delà de l'utilisation basique — en travaillant sur la cohérence visuelle, la typographie, les composants et les prototypes interactifs.",
+      "techs": [
+        "Figma",
+        "Wireframing",
+        "Prototypage",
+        "Enquêtes UX"
+      ]
+    },
+    {
+      "title": "Gestion de Projet & Communication Digitale",
+      "icon": "campaign",
+      "text": "Travailler en équipe, c'est quelque chose qui fait vraiment partie de ma façon de fonctionner. Au fil de mes projets, j'ai collaboré avec des développeurs, des designers, des chefs de projet et des clients — et j'ai appris que la réussite d'un projet repose autant sur la qualité des échanges que sur les compétences techniques de chacun.\nJ'ai travaillé avec la méthode Agile, qui m'a appris à planifier, prioriser et m'adapter aux imprévus. En parallèle, ma formation m'a aussi sensibilisée à la communication digitale : élaboration de stratégies de contenu, optimisation SEO et suivi des performances — autant de compétences qui me permettent d'avoir une vision plus globale d'un projet web.",
+      "techs": [
+        "Méthode Agile",
+        "Trello",
+        "Notion",
+        "Git / Git Flow",
+        "SEO"
+      ]
+    },
+    {
+      "title": "Intelligence Artificielle & Outils génératifs",
+      "icon": "search",
+      "text": "L'IA fait partie de mon workflow au quotidien. En entreprise, j'utilise Claude Code pour m'assister dans le développement — rédaction de prompts, utilisation de skills, optimisation du code. Au-delà de l'outil, j'ai appris à bien formuler mes demandes pour en tirer le meilleur parti, ce qui demande autant de rigueur que de créativité.\nJe vois l'IA non pas comme un raccourci, mais comme un vrai levier pour travailler plus efficacement et se concentrer sur ce qui a vraiment de la valeur.",
+      "techs": [
+        "Claude Code",
+        "Chat GPT"
+      ]
+    }
+  ]
 }
