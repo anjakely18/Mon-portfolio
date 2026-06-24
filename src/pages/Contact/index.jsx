@@ -12,7 +12,7 @@ const Contact = () => {
           <div className="max-w-2xl mx-auto flex flex-col gap-10">
             <div className="flex flex-col gap-3">
               <h2 className="font-title font-bold text-h2">Travaillons ensemble</h2>
-              <p className="text-body text-(--color-text)/60">
+              <p className="text-body text-(--color-text-muted)">
                 Un projet, une opportunité, une question ? Je suis disponible et réponds rapidement.
               </p>
             </div>

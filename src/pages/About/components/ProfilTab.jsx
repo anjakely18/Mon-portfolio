@@ -23,14 +23,14 @@ const ProfilTab = () => {
             <ReactCountryFlag countryCode={langue.code} svg style={{ width: "2rem", height: "2rem", borderRadius: "50%" }} />
             <div>
               <p className="font-bold font-title">{langue.name}</p>
-              <p className="text-caption text-(--color-text)/50">{langue.level}</p>
+              <p className="text-caption text-(--color-text-muted)">{langue.level}</p>
             </div>
           </div>
         ))}
       </div>
 
       {/* Valeurs — 4 colonnes */}
-      <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-4 gap-4">
         {valeurs.map((valeur, i) => {
           const Icon = iconMap[valeur.icon];
           return (

@@ -45,7 +45,7 @@ const Gallery = ({ images, title }) => {
       </div>
 
       {/* Thumbnails */}
-      <div className="flex gap-3">
+      <div className="flex gap-3 overflow-x-auto pb-1">
         {images.map((src, i) => (
           <button
             key={i}
@@ -85,7 +85,7 @@ const ProjectDetail = () => {
         {/* Lien retour */}
         <Link
           to="/projects"
-          className="flex items-center gap-2 text-caption text-(--color-text)/50 hover:text-(--color-text) transition-colors w-fit"
+          className="flex items-center gap-2 text-caption text-(--color-text-muted) hover:text-(--color-text) transition-colors w-fit"
         >
           <FiArrowLeft />
           Retour aux projets

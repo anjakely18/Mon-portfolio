@@ -21,7 +21,7 @@ const TechStack = () => {
                 <Icon className="text-xl" style={{ color }} />
                 <span className="font-bold font-title">{name}</span>
               </div>
-              <span className="text-caption text-(--color-text)/50 capitalize">{level}</span>
+              <span className="text-caption text-(--color-text-muted) capitalize">{level}</span>
             </div>
             <div className="h-1.5 w-full bg-(--color-text)/10 rounded-full overflow-hidden">
               <motion.div

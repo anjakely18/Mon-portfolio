@@ -12,7 +12,7 @@ const About = () => {
       <SectionTitle className="main text-h2 font-title" title="Tout sur moi" />
       <div className="flex flex-col md:flex-row gap-8 md:gap-16 mt-12">
         <AnimatedSection delay={0} className="flex flex-col gap-4 md:w-1/2">
-          <p>
+          <p className="text-body">
               <FaMapMarkerAlt className="text-main inline-block mr-2" /> Localisation : {aboutInfo.localisation}
           </p>
           <p className="text-body">
