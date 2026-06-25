@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { FiChevronDown } from "react-icons/fi";
 
 const FeatureCard = ({ icon, title, description, onClick, isActive, className = "" }) => {
   const Tag = onClick ? "button" : "div";
@@ -17,6 +18,11 @@ const FeatureCard = ({ icon, title, description, onClick, isActive, className = 
       {icon}
       <h4 className="font-bold font-title">{title}</h4>
       {description && <p className="text-caption text-(--color-text-muted)">{description}</p>}
+      {onClick && (
+        <FiChevronDown
+          className={`mt-auto self-end text-(--color-text-muted) transition-transform duration-300 ${isActive ? "rotate-180 text-main" : ""}`}
+        />
+      )}
     </Tag>
   );
 };
