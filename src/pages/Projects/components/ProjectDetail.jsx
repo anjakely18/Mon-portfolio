@@ -19,6 +19,7 @@ const Gallery = ({ images, title }) => {
         <img
           src={images[current]}
           alt={`${title} — capture ${current + 1}`}
+          loading="lazy"
           className="w-full max-h-[70vh] object-cover"
         />
 
@@ -54,7 +55,7 @@ const Gallery = ({ images, title }) => {
               i === current ? "border-main shadow-glow" : "border-transparent opacity-50 hover:opacity-80"
             }`}
           >
-            <img src={src} alt={`Miniature ${i + 1}`} className="w-full h-full object-cover" />
+            <img src={src} alt={`Miniature ${i + 1}`} loading="lazy" className="w-full h-full object-cover" />
           </button>
         ))}
       </div>
