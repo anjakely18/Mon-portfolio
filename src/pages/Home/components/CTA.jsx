@@ -13,7 +13,7 @@ const CTA = () => {
           <span className="text-main">aventures</span>
         </h2>
         <p className="text-caption max-w-md opacity-70">
-          Si mon profil vous intéresse, je serais ravie d'échanger.
+          {"Si mon profil vous intéresse, je serais ravie d'échanger."}
         </p>
         <Link to="/contact" className="btn-primary mt-2">
           Me contacter
