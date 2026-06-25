@@ -165,7 +165,7 @@
         "Shopify",
         "Liquid"
       ],
-      "category": "Front-end"
+      "category": "CMS"
     },
     {
       "approach": "J'ai pris en charge la mise en place et la personnalisation des blocs Bento pour l'affichage des articles — sections vidéo-titre, citation, image-texte — en les adaptant fidèlement aux maquettes. J'ai également développé le listing des articles et participé activement aux phases de recette pour valider et affiner chaque livraison.",
@@ -188,7 +188,7 @@
         "Shopify",
         "Liquid"
       ],
-      "category": "Front-end"
+      "category": "CMS"
     }
   ]
 }
