@@ -74,7 +74,7 @@ const ProjectDetail = () => {
 
   if (!project) return <Navigate to="/projects" replace />;
 
-  const { title, category, role, duration, techs, url, github, context, approach, result, gallery } = project;
+  const { title, category, role, duration, techs, url, github, text, context, approach, result, gallery } = project;
 
   return (
     <>
@@ -91,10 +91,13 @@ const ProjectDetail = () => {
           Retour aux projets
         </Link>
 
-        {/* Galerie */}
+        {/* Galerie + description */}
         {gallery?.length > 0 && (
-          <AnimatedSection>
+          <AnimatedSection className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 items-center">
             <Gallery images={gallery} title={title} />
+            {text && (
+              <p className="text-body text-(--color-text)/70">{text}</p>
+            )}
           </AnimatedSection>
         )}
 
