@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import OptimizedImage from "@/components/OptimizedImage";
 
 /**
  * Carte affichant une certification avec son image, son titre,
@@ -16,7 +17,7 @@ const CertificationCard = ({ img, title, text, date, issuer }) => {
   return (
     <article className="bg-bg-second rounded-lg overflow-hidden flex flex-col h-full hover:shadow-glow transition-all duration-300">
       <div className="overflow-hidden">
-        <img src={img} alt={title} loading="lazy" className="w-full object-cover" />
+        <OptimizedImage src={img} alt={title} loading="lazy" className="w-full object-cover" />
       </div>
       <div className="p-4 flex flex-col gap-2 flex-1">
         <div className="flex items-center justify-between text-caption text-main">

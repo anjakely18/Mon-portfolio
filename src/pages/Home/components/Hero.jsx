@@ -2,6 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import maPhoto from "@/assets/me.png";
+import maPhotoWebp from "@/assets/me.webp";
 import cv from "@/assets/cv.pdf";
 import ParticlesWrapper from "./Particles";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -60,7 +61,10 @@ const Hero = () => {
       </div>
       <AnimatedSection delay={0.3}>
         <div className="relative z-10 w-70 h-70 md:top-12 md:w-90 md:h-90 rounded-full overflow-hidden shrink-0 cursor-pointer shadow-glow-lg hover:shadow-glow-xl transition-all duration-300">
-          <img src={maPhoto} alt="ma photo" className="w-full h-full object-cover object-center" />
+          <picture>
+            <source srcSet={maPhotoWebp} type="image/webp" />
+            <img src={maPhoto} alt="ma photo" className="w-full h-full object-cover object-center" />
+          </picture>
         </div>
       </AnimatedSection>
     </section>
