@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { FiExternalLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import OptimizedImage from "@/components/OptimizedImage";
 
 /**
  * Carte de projet cliquable menant vers la page de détail.
@@ -20,7 +19,7 @@ const ProjectsCard = ({ gallery, title, text, slug, techs }) => {
   return (
     <Link to={`/projects/${slug}`} className="border border-(--color-text)/10 rounded-lg px-6 py-10 flex flex-col gap-3 h-full cursor-pointer hover:shadow-glow transition-all duration-300 group">
       <div className="overflow-hidden rounded-lg">
-        <OptimizedImage src={gallery[0]} alt={title} loading="lazy" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 aspect-[3/2]" />
+        <img src={gallery[0]} alt={title} loading="lazy" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 aspect-[3/2]" />
       </div>
       <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <FiExternalLink />

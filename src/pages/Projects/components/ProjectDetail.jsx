@@ -3,7 +3,6 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import { FiExternalLink, FiGithub, FiArrowLeft, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import PageHero from "@/components/PageHero";
-import OptimizedImage from "@/components/OptimizedImage";
 import projectsData from "@/content/projects.json";
 import AnimatedSection from "@/components/AnimatedSection";
 
@@ -26,7 +25,7 @@ const Gallery = ({ images, title }) => {
     <div className="flex flex-col gap-4">
       {/* Image principale */}
       <div className="relative overflow-hidden rounded-2xl bg-bg-second">
-        <OptimizedImage
+        <img
           src={images[current]}
           alt={`${title} — capture ${current + 1}`}
           loading="lazy"
@@ -65,7 +64,7 @@ const Gallery = ({ images, title }) => {
               i === current ? "border-main shadow-glow" : "border-transparent opacity-50 hover:opacity-80"
             }`}
           >
-            <OptimizedImage src={src} alt={`Miniature ${i + 1}`} loading="lazy" className="w-full h-full object-cover" />
+            <img src={src} alt={`Miniature ${i + 1}`} loading="lazy" className="w-full h-full object-cover" />
           </button>
         ))}
       </div>

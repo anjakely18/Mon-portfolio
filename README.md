@@ -78,31 +78,6 @@ npm run preview
 npm run lint
 ```
 
-## Optimisation des images
-
-Les images sont automatiquement converties en **WebP** avant chaque build via `scripts/optimize-images.js` (utilise `cwebp`, inclus dans homebrew).
-
-### Fonctionnement
-
-- À chaque `npm run build`, le script (`prebuild`) scanne `public/images/uploads/` et `src/assets/`
-- Pour chaque `.png`/`.jpg`/`.jpeg`, il génère un `.webp` à qualité 80 dans le même dossier
-- Un manifest `scripts/.optimize-manifest.json` trace les fichiers déjà traités — seules les nouvelles images sont retraitées
-- Les originaux sont conservés comme fallback via la balise `<picture>` dans le composant `OptimizedImage`
-
-### Workflow pour un nouvel upload CMS
-
-1. Uploader l'image via Decap CMS (stockée en `.png`/`.jpg` dans `public/images/uploads/`)
-2. Référencer le chemin original dans le JSON (ex: `/images/uploads/mon-image.png`)
-3. Au prochain `npm run build`, le `.webp` est généré automatiquement
-
-Pour tester en dev sans rebuilder :
-
-```bash
-npm run optimize-images
-```
-
-> **Prérequis système :** `cwebp` doit être installé (`brew install webp` sur macOS).
-
 ## Données du site
 
 Le contenu est géré via des fichiers JSON dans `src/content/` et éditable sans toucher au code grâce à **Decap CMS**.

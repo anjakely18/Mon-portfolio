@@ -5,9 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "optimize-images": "node scripts/optimize-images.js",
     "build": "vite build",
-    "prebuild": "node scripts/optimize-images.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
