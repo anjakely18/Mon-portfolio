@@ -146,6 +146,7 @@
       "approach": "Le projet est géré en méthode Agile, avec des sprints réguliers, des réunions hebdomadaires de suivi et des phases de recette pour valider chaque livraison. J'ai intervenu sur plusieurs parties du site : le footer, les templates de listing et de détail pour les projets, articles et lookbooks, ainsi que la page panier. J'ai également développé différents blocs réutilisables — carrousel de logos, listes d'icônes, bloc galerie avec zoom, navigation entre images et gestion des tailles. Enfin, j'ai mis en place des dataLayers hors funnel e-commerce pour tracker des événements clés : clic sur la boutique depuis la carte, inscription à la newsletter, ajout au panier de produits configurés.",
       "slug": "migration-tiptoe",
       "text": "Durant mon alternance chez Ikko, je travaille actuellement sur Tiptoe, un site e-commerce de vente de meubles — l'un des projets phares sur lesquels je suis impliquée.",
+      "url": "https://drive.google.com/file/d/146eFMWXE8N0NIkQStluMHjcZz2oNcFzr/view?usp=sharing",
       "context": "L'objectif était de migrer le site existant de WordPress vers Shopify, en l'adaptant au thème Bento développé par Ikko. Une fois la migration bien avancée, j'ai rejoint deux autres développeurs pour mettre en place les sections réutilisables et personnaliser le thème afin qu'il corresponde au mieux au site en production.",
       "gallery": [
         "/images/uploads/tiptoe-1.png",
