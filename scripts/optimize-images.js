@@ -30,6 +30,13 @@ function getFiles(dir) {
     .map((f) => join(dir, f));
 }
 
+try {
+  execSync('which cwebp', { stdio: 'ignore' });
+} catch {
+  console.warn('⚠ cwebp introuvable — optimisation ignorée. Installe-le avec : brew install webp (macOS) ou apt-get install webp (Linux)');
+  process.exit(0);
+}
+
 const manifest = loadManifest();
 let converted = 0;
 let skipped = 0;

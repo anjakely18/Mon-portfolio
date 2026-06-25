@@ -1,3 +1,3 @@
 [build]
-  command = "npm run build"
+  command = "apt-get install -y webp 2>/dev/null || true && npm run build"
   publish = "dist"

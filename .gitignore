@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 .env
 .env.local
+
+# Images WebP générées automatiquement par scripts/optimize-images.js
+public/images/uploads/*.webp
+src/assets/*.webp
