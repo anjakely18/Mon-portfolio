@@ -116,6 +116,31 @@
         "Adobe Photoshop"
       ],
       "category": "Design / UX"
+    },
+    {
+      "github": "https://git.unistra.fr/boosbenyahia/sae402-diagnostique-energetique",
+      "approach": "Le projet a été développé à l’aide du framework Symfony pour le back-end, garantissant une structure robuste et modulable, et du JavaScript pour les interactions côté client, afin d’assurer une expérience fluide et interactive. Nous avons débuté par une phase de spécifications fonctionnelles, en nous basant sur des user stories et user flows. Nous avons identifié les différents profils utilisateurs (administrateur, conseiller, répondant, structure) et défini les parcours associés à chacun. Avant de passer au développement, une maquette interactive de la plateforme a été conçue pour valider l’arborescence et l’ergonomie générale de l’outil.\nSur le plan du développement, j’avais la charge du rôle “conseiller”, ce qui\nimpliquait :\n• La gestion de l’attribution des questionnaires,\n• Leur affichage conditionnel selon les répondants,\n• La collecte et l’enregistrement des réponses,\n• Le calcul des points associés à chaque question,\n• Ainsi que l’association des résultats aux profils de structure",
+      "slug": "questionnaire-icube",
+      "text": "Un projet full stack réalisé en groupe pour la réalisation d'un questionnaire avec un système de  points.",
+      "url": "https://drive.google.com/file/d/1YQ_exlvAp_D3t54T78eCm-092IYg4gJ-/view?usp=sharing",
+      "context": "Dans le cadre de cette SAE, notre groupe a collaboré avec le laboratoire ICube\ndans le but de concevoir et développer un outil de diagnostic numérique destiné à\naccompagner les structures dans l’évaluation de leurs pratiques. Ce dispositif prenait\nla forme d’un questionnaire dynamique, accessible via une plateforme web.",
+      "gallery": [
+        "/images/uploads/diagnostique-num-1.png",
+        "/images/uploads/diagnositique-num-2.png",
+        "/images/uploads/diagnostique-num-3.png",
+        "/images/uploads/diagnostique-num-4.png"
+      ],
+      "duration": "2 semaines",
+      "role": "Développeuse front et back",
+      "title": "Outil de diagnostique numérique ",
+      "result": "Malgré quelques difficultés techniques lors de la mise en production\n(problèmes d’hébergement, bugs liés à des dépendances ou à la base de données), le\nprojet a abouti à une plateforme fonctionnelle et navigable, répondant aux\nobjectifs de départ. J’ai pu renforcer mes compétences en développement back-end et en gestion de projet collaboratif, mais aussi de mieux comprendre l’importance d’un processus structuré allant de la compréhension des besoins jusqu’au déploiement.",
+      "techs": [
+        "Symfony",
+        "Javascript",
+        "HTML",
+        "CSS"
+      ],
+      "category": "Full-stack"
     }
   ]
 }
