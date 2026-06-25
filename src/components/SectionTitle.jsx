@@ -1,5 +1,12 @@
 import PropTypes from "prop-types";
 
+/**
+ * Titre de section avec un séparateur coloré en dessous.
+ *
+ * @param {Object} props
+ * @param {string} props.title - Texte du titre
+ * @returns {JSX.Element}
+ */
 const SectionTitle = ({ title }) => {
   return (
     <div className="">

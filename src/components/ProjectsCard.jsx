@@ -2,6 +2,19 @@ import PropTypes from "prop-types";
 import { FiExternalLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
+/**
+ * Carte de projet cliquable menant vers la page de détail.
+ * Affiche la première image de la galerie, le titre, une description tronquée
+ * et jusqu'à 3 technologies.
+ *
+ * @param {Object} props
+ * @param {string[]} props.gallery - URLs des images du projet (première utilisée en miniature)
+ * @param {string} props.title - Titre du projet
+ * @param {string} props.text - Description courte
+ * @param {string} props.slug - Identifiant unique pour la route `/projects/:slug`
+ * @param {string[]} [props.techs] - Technologies utilisées
+ * @returns {JSX.Element}
+ */
 const ProjectsCard = ({ gallery, title, text, slug, techs }) => {
   return (
     <Link to={`/projects/${slug}`} className="border border-(--color-text)/10 rounded-lg px-6 py-10 flex flex-col gap-3 h-full cursor-pointer hover:shadow-glow transition-all duration-300 group">

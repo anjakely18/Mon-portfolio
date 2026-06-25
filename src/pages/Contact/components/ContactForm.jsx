@@ -1,8 +1,15 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+/** États possibles de l'envoi du formulaire. */
 const STATUS = { IDLE: "idle", SENDING: "sending", SUCCESS: "success", ERROR: "error" };
 
+/**
+ * Valide les champs du formulaire de contact.
+ *
+ * @param {{ name: string, email: string, message: string }} fields - Données du formulaire
+ * @returns {string|null} Message d'erreur, ou null si les données sont valides
+ */
 const validate = ({ name, email, message }) => {
   if (!name.trim()) return "Le nom est requis.";
   if (!email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return "Adresse email invalide.";
@@ -10,6 +17,13 @@ const validate = ({ name, email, message }) => {
   return null;
 };
 
+/**
+ * Formulaire de contact avec validation côté client et envoi via EmailJS.
+ * Gère les états d'envoi (idle, sending, success, error) et réinitialise
+ * le formulaire après un envoi réussi.
+ *
+ * @returns {JSX.Element}
+ */
 const ContactForm = () => {
   const formRef = useRef();
   const [status, setStatus] = useState(STATUS.IDLE);

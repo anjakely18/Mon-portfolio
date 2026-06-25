@@ -5,6 +5,13 @@ import projectsData from "@/content/projects.json";
 const projects = projectsData.projects;
 import ProjectsCard from "@/components/ProjectsCard";
 
+/**
+ * Carrousel de projets avec défilement automatique toutes les 4 secondes.
+ * Utilise Embla Carousel pour la navigation tactile et au clavier.
+ * Affiche 1 carte sur mobile, 2 sur tablette, 3 sur desktop.
+ *
+ * @returns {JSX.Element}
+ */
 const ProjectsCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -14,6 +21,7 @@ const ProjectsCarousel = () => {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
   const scrollTo = useCallback((index) => emblaApi?.scrollTo(index), [emblaApi]);
 
+  /** Synchronise l'index actif avec la position du carrousel. */
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
     setSelectedIndex(emblaApi.selectedScrollSnap());

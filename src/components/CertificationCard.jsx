@@ -1,5 +1,17 @@
 import PropTypes from "prop-types";
 
+/**
+ * Carte affichant une certification avec son image, son titre,
+ * sa description, son émetteur et sa date d'obtention.
+ *
+ * @param {Object} props
+ * @param {string} props.img - URL de l'image de la certification
+ * @param {string} props.title - Nom de la certification
+ * @param {string} props.text - Description ou détails
+ * @param {string} [props.date] - Date d'obtention
+ * @param {string} [props.issuer] - Organisme émetteur
+ * @returns {JSX.Element}
+ */
 const CertificationCard = ({ img, title, text, date, issuer }) => {
   return (
     <article className="bg-bg-second rounded-lg overflow-hidden flex flex-col h-full hover:shadow-glow transition-all duration-300">

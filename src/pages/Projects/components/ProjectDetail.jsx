@@ -6,6 +6,15 @@ import PageHero from "@/components/PageHero";
 import projectsData from "@/content/projects.json";
 import AnimatedSection from "@/components/AnimatedSection";
 
+/**
+ * Galerie d'images interactive avec navigation par flèches et miniatures.
+ * La navigation est circulaire (après la dernière image, retour à la première).
+ *
+ * @param {Object} props
+ * @param {string[]} props.images - Liste des URLs des images
+ * @param {string} props.title - Titre du projet (utilisé pour les attributs alt)
+ * @returns {JSX.Element}
+ */
 const Gallery = ({ images, title }) => {
   const [current, setCurrent] = useState(0);
 

@@ -1,6 +1,20 @@
 import PropTypes from "prop-types";
 import { FiChevronDown } from "react-icons/fi";
 
+/**
+ * Carte de fonctionnalité polyvalente pouvant fonctionner comme un bouton ou un div.
+ * Si `onClick` est fourni, le composant devient un `<button>` interactif avec
+ * un chevron animé indiquant l'état actif/inactif.
+ *
+ * @param {Object} props
+ * @param {React.ReactNode} props.icon - Icône affichée en haut de la carte
+ * @param {string} props.title - Titre de la carte
+ * @param {string} [props.description] - Description optionnelle
+ * @param {function} [props.onClick] - Si fourni, rend la carte cliquable
+ * @param {boolean} [props.isActive] - Indique si la carte est sélectionnée
+ * @param {string} [props.className=""] - Classes CSS supplémentaires
+ * @returns {JSX.Element}
+ */
 const FeatureCard = ({ icon, title, description, onClick, isActive, className = "" }) => {
   const Tag = onClick ? "button" : "div";
 

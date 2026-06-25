@@ -1,6 +1,15 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
+/**
+ * Composant d'onglets générique avec gestion d'état interne.
+ * Le premier onglet est actif par défaut. Inclut un dégradé de débordement
+ * sur mobile pour signaler le scroll horizontal.
+ *
+ * @param {Object} props
+ * @param {Array<{id: string, label: string, content: React.ReactNode}>} props.tabs - Liste des onglets à afficher
+ * @returns {JSX.Element}
+ */
 const Tabs = ({ tabs }) => {
   const [active, setActive] = useState(tabs[0].id);
   const current = tabs.find(t => t.id === active);
