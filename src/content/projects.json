@@ -166,6 +166,29 @@
         "Liquid"
       ],
       "category": "Front-end"
+    },
+    {
+      "approach": "J'ai pris en charge la mise en place et la personnalisation des blocs Bento pour l'affichage des articles — sections vidéo-titre, citation, image-texte — en les adaptant fidèlement aux maquettes. J'ai également développé le listing des articles et participé activement aux phases de recette pour valider et affiner chaque livraison.",
+      "slug": "briard-shopify",
+      "text": "Durant mon alternance chez Ikko, j'ai participé au développement from scratch de Briard, une boutique e-commerce de bijoux sur Shopify.",
+      "url": "https://www.briard.fr/",
+      "context": "En équipe de trois développeurs, nous avons construit le site entièrement from scratch en adaptant le thème Bento d'Ikko aux maquettes du client. Mon rôle était centré sur le développement front-end des sections et templates.",
+      "gallery": [
+        "/images/uploads/briard-1.png",
+        "/images/uploads/briard-2.png",
+        "/images/uploads/briard-3.png",
+        "/images/uploads/briard-4.png",
+        "/images/uploads/briard-5.png"
+      ],
+      "duration": "Un mois",
+      "role": "Intégratrice Front-end Shopify",
+      "title": "Briard — Boutique e-commerce de bijoux",
+      "result": "Un site e-commerce cohérent et fidèle aux attentes du client, livré dans les délais. Une expérience qui m'a permis de gagner en autonomie sur Shopify et de mieux maîtriser le cycle complet d'un projet, de l'intégration jusqu'à la recette.",
+      "techs": [
+        "Shopify",
+        "Liquid"
+      ],
+      "category": "Front-end"
     }
   ]
 }
